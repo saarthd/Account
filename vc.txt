@@ -71,6 +71,8 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
 # Renovate Outlier Detection program with a hardness level system and fix the 2-outlier bug. (S) 0% Complete
 
+#Add 'random fact' section to 'messages' (S) 0% Complete
+
 *************DHAYAS***************
 # BlackJack in 'games' menu (D) 49% Complete
 # Make Passcode into **** while typing (D) 0% Complete
@@ -89,3 +91,5 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
  - Outlier Detection Systems will be improved. (v1.6 or v1.7)
 
  - Many new games will be added in future updates. (v1.6)
+
+ - A new 'AI random fact messager' will be put in the 'messages' menu.

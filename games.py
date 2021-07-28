@@ -130,7 +130,7 @@ def hm():
   print("The word was: ",word)
 
 def dice():
-  print ("Hello! This is a Dice Rolling Simulater!")
+  print ("Hello! This is a Dice Rolling Simulator!")
   time.sleep(1)
   print ("Type 'Roll' to Roll the Dice or 'Done' once your Done")
   time.sleep(1)
