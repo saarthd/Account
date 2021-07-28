@@ -289,9 +289,6 @@ def rpssaarth():
       print ("Internal error")
 
 
-
-
-
 def nc():
   x = input("what number do you want me to change?")
   maximum = input("what is the maximum amount I can change it by?")
