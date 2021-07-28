@@ -304,3 +304,204 @@ def nc():
   print (f"here is your changed number:{newx}")
   time.sleep (2.5)
   print (f"here is the amount by which I changed your number: {z}")
+
+
+
+def bol():
+  print("Hello! This is the *Magic 8ball*!!!")
+  time.sleep(1.5)
+  print("Just ask me a question and I'll respond with how likey is is to happen!")
+  time.sleep(2)
+  while True:
+    input("What is your question?: ")
+    time.sleep(1)
+    print (random.choice(["No.","Maybe.","Definetly not.","Without a doubt.","You may rely on it.","It is certain.","It is decidedly so.","Without a doubt.","Yes, definitely.","You may rely on it.","As I see it, yes.","Most likely.","Outlook good.","Yes.","Signs point to yes.","Reply hazy try again.","Ask again later.","Better not tell you now.","Cannot predict now.","Concentrate and ask again.","Don't count on it.","My reply is no.","My sources say no.","Outlook not so good.","Very doubtful."]))
+    time.sleep(1)
+    print("Thank you for using the *Magic 8ball*!")
+    time.sleep(1)
+    bob = input("Would you like to ask another question? (Type 'Yes' or 'No'): ").lower()
+    if bob == "yes":
+      print("Ok!")
+      time.sleep(1)
+    else: 
+      print("Ok!")
+      break
+  time.sleep(1)
+  print("Sending you back to main...")
+
+
+
+# def bj():
+#   from goto import goto
+#   botstand = 0
+#   print("Hello! This is Blackjack!")
+#   time.sleep(1)
+#   print("Would you like to play against the bot or againt your friend?")
+#   x = input("Type 'B' for Bot | Type 'F' for Friend: ").lower()
+#   time.sleep(1)
+#   J = 10
+#   Q = 10
+#   K = 10
+#   A = 1
+#   c1 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c2 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c3 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c4 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c5 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c6 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c7 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c8 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c9 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+#   c10 = random.choice([A,2,3,4,5,6,7,8,9,10,J,Q,K])
+
+#   ######################################################
+
+#   while True:
+#     if x == "b":
+#       print("Ok!")
+#       time.sleep(1)
+#       n = input("What is your name?: ")
+#       time.sleep(1)
+#       print ("")
+#       print(n,"--- Cards:",c1,"||","Total:",c1)
+#       time.sleep(1)
+#       user = c1
+#       print("Bot","--- Cards:",c2,"||","Total:",c2)
+#       time.sleep(1)
+#       bot = c2
+#       print("")
+#       hs = input("Would you like to Hit or Stand (Type H/S):  ").lower()
+#       time.sleep(1)
+
+#   #Start of Confusion
+
+#       if hs == "h":
+#         print ("Sure!")
+#         time.sleep(1)
+#         print(n,"--- Cards:",c1,",",c3,"||","Total:",c1+c3)
+#         user = c1+c3
+#         time.sleep(1)
+#         print("Bot","--- Cards:",c2,",",c4,"||","Total:",c2+c4)
+#         bot = c2+c4
+#         time.sleep(1)
+#         if bot > 16 and bot < 21:
+#           botstand = 1
+#         elif bot > 21:
+#           time.sleep (0.5)
+#           print ("Bot Busted. You Win!")
+#           quit(bj())
+#         elif user > 21:
+#           time.sleep (0.5)
+#           print ("You Busted. Bot Wins!")
+#           quit(bj())
+#         break
+#       elif hs == "s":
+#         if bot > user:
+#           print("Sorry! You lose! The Bot wins! Press 'run' to play again.")
+#           quit(bj())
+#         elif user > bot: 
+#           print ("You win! Press 'Run' to play again.")
+#           quit(bj())
+#         else:
+#           print("Tie! Press 'Run' to play again.")
+#           quit(bj())
+
+#   hs = input("Would you like to Hit or Stand (Type H/S):  ").lower()
+#   time.sleep (1)
+#   while True:
+#     if hs == "h":
+#       print ("Sure!")
+#       time.sleep(1)
+#       print(n,"--- Cards:",c1,",",c3,"",c5,"||","Total:",c1+c3+c5)
+#       user = c1+c3+c5+c7
+#       time.sleep(1)
+#       print("Bot","--- Cards:",c2,",",c4,"",c6,"||","Total:",c2+c4+c6)
+#       bot = c2+c4+c6+c8
+#       time.sleep(1)
+#       if bot > 16 and bot < 21:
+#         botstand = 1
+#       elif bot > 21:
+#         time.sleep (0.5)
+#         print ("Bot Busted. You Win!")
+#         quit(bj())
+#       elif user > 21:
+#         time.sleep (0.5)
+#         print ("You Busted. Bot Wins!")
+#         quit(bj())
+#       break
+#     elif hs == "s":
+#       if bot > user:
+#         print("Sorry! You lose! The Bot wins! Press 'run' to play again.")
+#         quit(bj())
+#       elif user > bot: 
+#         print ("You win! Press 'Run' to play again.")
+#         quit()
+#       else:
+#         print("Tie! Press 'Run' to play again.")
+#         quit(bj())
+#   hs = input("Would you like to Hit or Stand (Type H/S):  ").lower()
+#   time.sleep (1)
+#   while True:
+#     if hs == "h":
+#       print ("Sure!")
+#       time.sleep(1)
+#       print(n,"--- Cards:",c1,",",c3,"",c5,"",c7,"||","Total:",c1+c3+c5+c7)
+#       user = c1+c3+c5+c7
+#       time.sleep(1)
+#       print("Bot","--- Cards:",c2,",",c4,"",c6,"",c8,"||","Total:",c2+c4+c6+c8)
+#       bot = c2+c4+c6+c8
+#       time.sleep(1)
+#       if bot > 16 and bot < 21:
+#         botstand = 1
+#       elif bot > 21:
+#         time.sleep (0.5)
+#         print ("Bot Busted. You Win!")
+#         quit(bj())
+#       elif user > 21:
+#         time.sleep (0.5)
+#         print ("You Busted. Bot Wins!")
+#         quit(bj())
+#       break
+#     elif hs == "s":
+#       if bot > user:
+#         print("Sorry! You lose! The Bot wins! Press 'run' to play again.")
+#         quit(bj())
+#       elif user > bot: 
+#         print ("You win! Press 'Run' to play again.")
+#         quit(bj())
+#       else:
+#         print("Tie! Press 'Run' to play again.")
+#         quit(bj())
+#   hs = input("Would you like to Hit or Stand (Type H/S):  ").lower()
+#   time.sleep (1)
+#   while True:
+#     if hs == "h":
+#       print ("Sure!")
+#       time.sleep(1)
+#       print(n,"--- Cards:",c1,",",c3,"",c5,"",c7,"",c9,"||","Total:",c1+c3+c5+c7+c9)
+#       user = c1+c3+c5+c7+c9
+#       time.sleep(1)
+#       print("Bot","--- Cards:",c2,",",c4,"",c6,"",c8,"",c10,"||","Total:",c2+c4+c6+c8+c10)
+#       bot = c2+c4+c6+c8+c10
+#       time.sleep(1)
+#       if bot > 16 and bot < 21:
+#         botstand = 1
+#       elif bot > 21:
+#         time.sleep (0.5)
+#         print ("Bot Busted. You Win!")
+#         quit(bj())
+#       elif user > 21:
+#         time.sleep (0.5)
+#         print ("You Busted. Bot Wins!")
+#         quit(bj())
+#       break
+#     elif hs == "s":
+#       if bot > user:
+#         print("Sorry! You lose! The Bot wins! Press 'run' to play again.")
+#         quit(bj())
+#       elif user > bot: 
+#         print ("You win! Press 'Run' to play again.")
+#         quit(bj())
+#       else:
+#         print("Tie! Press 'Run' to play again.")
+        

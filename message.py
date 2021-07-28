@@ -79,3 +79,23 @@ def advice():
   print(x,":",y)
   time.sleep(5)
   print("You: Thanks!")
+
+
+def fact():
+  print("Ok!")
+  y = random.choice(["The first person convicted of speeding was going eight mph.","The world wastes about 1 billion metric tons of food each year.","The world's smallest reptile was first reported in 2021.","Many feet bones don't harden until you're an adult.","Some sea snakes can breathe through their skin.","The moon has moonquakes.","Goosebumps are meant to ward off predators.","Humans are the only animals that blush.","The feeling of getting lost inside a mall is known as the Gruen transfer.","The wood frog can hold its pee for up to eight months.","The hottest spot on the planet is in Libya.","You lose up to 30 percent of your taste buds during flight.","Your nostrils work one at a time.","Copper door knobs are self-disinfecting.","Cotton candy was invented by a dentist.","Marie Curie is the only person to earn a Nobel prize in two different sciences.","The English word with the most definitions is set.","Creedence Clearwater Revival has the most No. 2 Billboard hits—without ever hitting No. 1.","Chewing gum boosts concentration."])
+  x = random.choice(["George","Eve","Ava","John","Josh","Bob","Steve","Mary","Andrew","Charles","Eric","Macey","Jack","Jasckson","Mike","Mia","Eliana","Lucas","Skyler","Zoe","Judy","Olivia","Jasmine","Leo","Alessia","Noah"])
+  time.sleep(1)
+  print("                --",x,"--")
+  time.sleep(1.5)
+  print("You: Can you please give me a Fun fact?")
+  time.sleep(2)
+  print(x,"is typing...")
+  time.sleep(1)
+  print(x,": Sure!")
+  time.sleep(1)
+  print(x,"is typing...")
+  time.sleep(2)
+  print(x,":",y)
+  time.sleep(5)
+  print("You: Thanks!")

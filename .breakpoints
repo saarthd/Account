@@ -1,3 +1,12 @@
 {
-  "files": {}
+  "files": {
+    "tool.py": [
+      {
+        "id": "6d50de91-b697-4405-9ad7-62afbe9c5147",
+        "line": 463,
+        "version": 384,
+        "index": 11880
+      }
+    ]
+  }
 }

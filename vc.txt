@@ -55,41 +55,60 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
 - v1.5 7/27/21 2:04 - 3:31 (S/D)
 - Added 'Outlier Detection' To 'tools' menu from scratch
-- Created the 'Help' Menu in    main with all of its corresponding code.
+- Created the 'Help' Menu in main with all of its corresponding code.
 - Added the 'Number Changer' to  'Games' menu
 - Finally fixed the new 'change passcode' bug
 - Added the new function 'advice' in messages and with the same layout 
 - Got the 'messages' module up to date
 
+
+
+
+   v1.6 7/28/21 2:21 - 4:14 PM (S/D)
+- Renovated the Outlier Detection Program with a proportional detection range (detran) instead of a set detection range (detran).
+- Fixed the two-outlier - two range bug with a additional secondary detection system. (SDS)
+- Added the 'Announcements & Future Releases' section to vc.txt
+- Added 8ball to the 'Games Menu' (VERY FUNNY)
+- Added BlackJack to the 'Games Menu'
+- Added the 'random fact' section to messages
+ (VERY ADDICTING)
+- Work has begun on the v2 milestone!
+
 #######################################################
 
---ASSIGNMENTS--
+        ---ASSIGNMENTS---
 
 *************SAARTHS***************
 
 # AI bot for tictactoe(S) 0% Complete
 
-# Renovate Outlier Detection program with a hardness level system and fix the 2-outlier bug. (S) 0% Complete
-
 #Add 'random fact' section to 'messages' (S) 0% Complete
 
+#Add 'Credits' to help menu(S) 0% Complete
+
 *************DHAYAS***************
-# BlackJack in 'games' menu (D) 49% Complete
+
 # Make Passcode into **** while typing (D) 0% Complete
-# Make Magic 8ball (D) 0% Complete
 
 ########################################################
 
 -- ANNOUNCEMENTS & FUTURE RELEASES --
 
- v1.6 to be released 7/26/21 at 3:00 PM
+ 
 
- -Tictactoe will be improved in the near future (v2)
+ -TicTacToe will be improved in the near future (v2)
 
- -New Passcode Protection Systems will be added such as stars will be added. (v1.6 or v1.7)
-
- - Outlier Detection Systems will be improved. (v1.6 or v1.7)
-
- - Many new games will be added in future updates. (v1.6)
+ -New Passcode Protection Systems will be added such as stars will be added. (v1.7)
 
  - A new 'AI random fact messager' will be put in the 'messages' menu.
+  (v1.7)
+
+
+
+  - a new game 'Fight' will be added to the 'Games' Menu. (v1.9)
+
+  - Credits in the 'Help' Menu (v1.7)
+
+  - BlackJack Friend Edition will be released in v1.7 or v1.8
+
+  - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors (v2)

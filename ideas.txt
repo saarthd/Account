@@ -1,9 +1,13 @@
 - Make this into a good enough bot for discord
+
+
 - Add currency
 - Make shop
 - Shop items - (have actions)
+
 
 - Fight
 - Emojify
 
 
+- Change Color of different menus(Ex. Main Menu - White, Tools Menu - Blue, Games Menu - Green)

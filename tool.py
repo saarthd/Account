@@ -291,10 +291,10 @@ def ods():
   time.sleep (0.5)
   print ("Hello! This program detects outliers and tells you what it is.")
   time.sleep (1)
-  detran = (15)
   x = input("How many values are in your range?: ")
   time.sleep (0.5)
   x = int(x)
+  time.sleep (1)
   print ("Initializing ... ")
   time.sleep (2)
   print ("Thank You.")
@@ -305,6 +305,34 @@ def ods():
     values.append(int(y))
     time.sleep (1)
   time.sleep (1)
+  bob = sum(values)
+  z = len(values)
+  av = bob / z
+  while True:
+    if av < 10:
+      detran = 4
+      break
+    elif av < 30:
+      detran = 8
+      break
+    elif av < 50:
+      detran = 12
+      break
+    elif av < 100:
+      detran = 16
+      break
+    elif av < 250:
+      detran = 25
+      break
+    elif av < 500:
+      detran = 36
+      break
+    elif av < 1000:
+      detran = 52
+      break
+    else:
+      detran = 100
+      break
   newx = (x-1)
   values.sort(reverse = False)
   time.sleep (1.5)
@@ -382,6 +410,52 @@ def ods():
       print ("Here is the outlier:")
       time.sleep (0.5)
       print (values[newx])
+  elif values[2] - values[1] > detran:
+    if values[newx-1] - values[newx-2] > detran:
+      time.sleep (0.5)
+      print ("OUTLIERS DETECTED!") 
+      time.sleep (0.8)
+      print ("Here are the outliers:")
+      time.sleep (1)
+      print (values[0])
+      time.sleep (0.5)
+      print (values[1])
+      time.sleep (0.5)
+      print (values[newx])
+      time.sleep (0.5)
+      print (values[newx-1])
+    else:
+      time.sleep (0.5)
+      print ("OUTLIERS DETECTED!")
+      time.sleep (1)
+      print ("Here are the outliers:")
+      time.sleep (1)
+      print (values[0])
+      time.sleep (0.5)
+      print (values[1])
+  elif values[newx-1] - values[newx-2] > detran:
+    if values[2] - values[1] > detran:
+      time.sleep (0.5)
+      print ("OUTLIERS DETECTED!") 
+      time.sleep (0.8)
+      print ("Here are the outliers:")
+      time.sleep (1)
+      print (values[0])
+      time.sleep (0.5)
+      print (values[1])
+      time.sleep (0.5)
+      print (values[newx])
+      time.sleep (0.5)
+      print (values[newx-1])
+    else:
+      time.sleep (0.5)
+      print ("OUTLIERS DETECTED!")
+      time.sleep (1)
+      print ("Here are the outliers:")
+      time.sleep (1)
+      print (values[newx])
+      time.sleep (0.5)
+      print (values[newx-1])
   else:
     print ("NO OUTLIERS DETECTED.")
     time.sleep (1)

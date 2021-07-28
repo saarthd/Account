@@ -12,7 +12,7 @@ while True:
     # Read passkey from the file
 
 
-    file = open("sample.txt", "r+")
+    file = open("sussy.txt", "r+")
     passkey = int((file.read()))
 
     if att == int(passkey):
@@ -104,7 +104,11 @@ while True:
           time.sleep (.5)
           print("Type '7' if you want to use a Custom Number Changer!")
           time.sleep(.5)
-          print ("Type '8' if you want to go back to the main menu.")
+          print("Type '8' if you want to play with the Magic 8ball.")
+          time.sleep(.5)
+          print("Type '9' if you want to play Blackjack!")
+          time.sleep(.5)
+          print ("Type '10' if you want to go back to the main menu.")
           time.sleep(0.6)
           choice = int(input("-> ")) 
 
@@ -139,8 +143,12 @@ while True:
           elif int(choice) == 7:
             games.nc()
             time.sleep(1)
-          
+
           elif int(choice) == 8:
+            games.bol()
+            time.sleep(1)
+
+          elif int(choice) == 9:
             print("Ok, sending you back to main...")
             time.sleep (1.6)
 
@@ -225,7 +233,9 @@ while True:
           time.sleep(0.5)
           print("Type '4' to be messaged things to make you Feel Better")
           time.sleep(0.5)
-          print ("Type '5' to return back to main menu.")
+          print("Type '5' to be messaged Fun Facts")
+          time.sleep(0.5)
+          print ("Type '6' to return back to main menu.")
           time.sleep(1)
           bruh = int(input("Your choice: "))
           time.sleep(1)
@@ -258,8 +268,14 @@ while True:
             time.sleep(1)
             print("Sending you back to main...")
             time.sleep(1.5)
-          
+
           elif bruh == 5:
+            message.fact()
+            time.sleep(1)
+            print("Sending you back to main...")
+            time.sleep(1.5)
+          
+          elif bruh == 6:
             time.sleep (1)
             print ("Ok. Sending You back to main ... ")
 
