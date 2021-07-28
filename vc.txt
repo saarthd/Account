@@ -27,11 +27,14 @@ v1.2 7/26/21 8:49 - 9:13 PM (D)
 
 
 
+
 v1.3 7/27/21 8:35 - 10:58 AM (D)
 - Changed Version Name
 - Changed some of the time.sleep() timings
 - Finished 'Messages' section (no bugs) (-i hope)
 - AI messaging feature Released!
+
+
 
 
 
