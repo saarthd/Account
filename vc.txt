@@ -68,12 +68,24 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 *************SAARTHS***************
 
 # AI bot for tictactoe(S) 0% Complete
-# Renovate Outlier Detection program with a hardness level system and fix the 2-outlier bug.
+
+# Renovate Outlier Detection program with a hardness level system and fix the 2-outlier bug. (S) 0% Complete
 
 *************DHAYAS***************
-#v1.6 to be released before 9:00 on 7/27
 # BlackJack in 'games' menu (D) 49% Complete
 # Make Passcode into **** while typing (D) 0% Complete
 # Make Magic 8ball (D) 0% Complete
 
 ########################################################
+
+-- ANNOUNCEMENTS & FUTURE RELEASES --
+
+ v1.6 to be released 7/26/21 at 3:00 PM
+
+ -Tictactoe will be improved in the near future (v2)
+
+ -New Passcode Protection Systems will be added such as stars will be added. (v1.6 or v1.7)
+
+ - Outlier Detection Systems will be improved. (v1.6 or v1.7)
+
+ - Many new games will be added in future updates. (v1.6)

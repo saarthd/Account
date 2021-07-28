@@ -282,13 +282,13 @@ while True:
 
 #Help menu conditions(:)
 
-          if verdict == 1:
+          if int(verdict) == 1:
             time.sleep (1)
             print ("To Navigate this program, you have to type the number corresponding to the place you want to go to when the prompt '->' appears. Then press enter, and you will arrive at your destination, and so on. ")
             time.sleep(8)
             print ("Returning to Main Menu ...")
             time.sleep (1.6)
-          elif verdict == 2:
+          elif int(verdict) == 2:
             time.sleep (1)
             print ("This is a program that consists of many products.")
             time.sleep (2.5)
@@ -304,7 +304,7 @@ while True:
             time.sleep (3)
             print ("I am now sending you back to main menu ... ")
             time.sleep (2)
-          elif verdict == 3:
+          elif int(verdict) == 3:
             time.sleep (1)
             print ("Ok. Sending you back to main ... ")
             time.sleep (2)
