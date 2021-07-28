@@ -55,7 +55,7 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
 - v1.5 7/27/21 2:04 - 3:31 (S/D)
 - Added 'Outlier Detection' To 'tools' menu from scratch
-- Created the 'Help' Menu in main       with all of its corresponding code.
+- Created the 'Help' Menu in    main with all of its corresponding code.
 - Added the 'Number Changer' to  'Games' menu
 - Finally fixed the new 'change passcode' bug
 - Added the new function 'advice' in messages and with the same layout 
