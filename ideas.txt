@@ -1,0 +1,7 @@
+- Make this into a good enough bot for discord
+- Add currency
+- Make shop
+- Shop items - (have actions)
+
+- Fight
+- Emojify

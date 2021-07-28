@@ -1,0 +1,76 @@
+v1.0: 7/26/21 2:12 - 4:05 PM (S/D)
+- Created the "tools" menu and all the tools in it.
+- Took away the "Are you sure?" option in games.
+- Code can now be longer than 4 numbers.
+- Created Calculator from scratch.
+- Released the Product!
+
+
+
+v1.1 7/26/21 7:24 - 8:11 PM (S)
+- Renovated the "Changing Passcode" Module with a integrated Old Passcode/New Passcode system
+- Fixed A bug where the 'code invalid' error wasn't running.
+- Added 'sentence letter counter' to tools menu.
+- Added a duplicate 'tools' code in case one of them crashes.
+- Added 'Soon To Be Added' Feature
+
+
+
+
+v1.2 7/26/21 8:49 - 9:13 PM (D)
+- Changed version name
+- Fixed the 'Changing Passcode' bug
+- Added the 'Messages' option to the Main Menu
+- Added the choices for the 'Messages' option
+- Added a 'message.py' file
+- CODE CAN NOW ONLY BE 4 NUMBERS.
+
+
+
+v1.3 7/27/21 8:35 - 10:58 AM (D)
+- Changed Version Name
+- Changed some of the time.sleep() timings
+- Finished 'Messages' section (no bugs) (-i hope)
+- AI messaging feature Released!
+
+
+
+v1.4 7/27/21 11:01 - 11:44 AM (S)
+- worked on debugging the messages feature.
+- Added a new function in 'message.py' Which texts self esteem boosters. (def feelbetter():)
+- Fixed a error in the function calling codes and added function responses for all 6 items in 'Messages' menu.
+- Did a small amount of rewording and overall exterior work on the 'Change Passcode' Module. Also fixed the "Passcode Validated" bug.
+- Added a 'return to main menu' option to the 'Messages' menu and a corresponding response.
+- Divided the messages Module into two different modules.
+- Fixed a small bug where there was a confusion between 'tool' and 'tools'.
+- The Messages Feature And the rest of the program now works without error in  v1.4!!!
+- Started working on v1.6
+
+
+
+
+
+- v1.5 7/27/21 2:04 - 3:31 (S/D)
+- Added 'Outlier Detection' To 'tools' menu from scratch
+- Created the 'Help' Menu in main       with all of its corresponding code.
+- Added the 'Number Changer' to  'Games' menu
+- Finally fixed the new 'change passcode' bug
+- Added the new function 'advice' in messages and with the same layout 
+- Got the 'messages' module up to date
+
+#######################################################
+
+--ASSIGNMENTS--
+
+*************SAARTHS***************
+
+# AI bot for tictactoe(S) 0% Complete
+# Renovate Outlier Detection program with a hardness level system and fix the 2-outlier bug.
+
+*************DHAYAS***************
+#v1.6 to be released before 9:00 on 7/27
+# BlackJack in 'games' menu (D) 49% Complete
+# Make Passcode into **** while typing (D) 0% Complete
+# Make Magic 8ball (D) 0% Complete
+
+########################################################
