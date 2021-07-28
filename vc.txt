@@ -69,7 +69,6 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 - Fixed the two-outlier - two range bug with a additional secondary detection system. (SDS)
 - Added the 'Announcements & Future Releases' section to vc.txt
 - Added 8ball to the 'Games Menu' (VERY FUNNY)
-- Added BlackJack to the 'Games Menu'
 - Added the 'random fact' section to messages
  (VERY ADDICTING)
 - Work has begun on the v2 milestone!
@@ -102,7 +101,7 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
  - A new 'AI random fact messager' will be put in the 'messages' menu.
   (v1.7)
-
+  - Blackjack in v1.7
 
 
   - a new game 'Fight' will be added to the 'Games' Menu. (v1.9)
