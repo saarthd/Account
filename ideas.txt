@@ -6,7 +6,6 @@
 - Shop items - (have actions)
 
 
-- Fight
 - Emojify
 
 

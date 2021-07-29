@@ -283,3 +283,5 @@ def slc():
   x = input("what sentence/word do you want me to count?: ")
   y = len(x)
   print (f"There are {y} characters in this phrase.")
+
+

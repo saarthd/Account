@@ -72,41 +72,65 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 - Added the 'random fact' section to messages
 - Work has begun on the v2 milestone!
 
+
+  v1.7 7/29/21 10:02 - 11:42 AM (S/D)
+- Made all of the "Return to Main Menu" as the first option so that when we add on more things we dont have to keep changing the number to the 'Return to Main Menu' too.
+- Added 'Credits' to the help menu
+- Added 'Random Password Generator' to tools
+- Fixed a few spelling mistakes throughout the program.
+- Updated Calculator
+- BlackJack v1 released without any bugs!
+- Fixed another file.save passcode bug
+
 #######################################################
 
-        ---ASSIGNMENTS---
+                  ---ASSIGNMENTS---
 
 *************SAARTHS***************
 
-# AI bot for tictactoe(S) 0% Complete
+- AI bot for tictactoe(S) 0% Complete
 
-#Add 'random fact' section to 'messages' (S) 0% Complete
+- Madlibs (S) 0%
 
-#Add 'Credits' to help menu(S) 0% Complete
+- BlackJack Friends Version (S) 0%
 
 *************DHAYAS***************
 
-# Make Passcode into **** while typing (D) 0% Complete
+- TextBased Adventure Game (D) 0% Complete
+
+- Short Story Generator (D)0%
+
+- Update Random Password Generator (D) 0%
+
+- Add Fun Menu (D) 0%
+
+- Wrong input bug! (D) 0%
 
 ########################################################
 
--- ANNOUNCEMENTS & FUTURE RELEASES --
+         -- ANNOUNCEMENTS & FUTURE RELEASES --
 
- 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
- -TicTacToe will be improved in the near future (v2)
+  - Fun Menu Coming out in v1.8!
+   ~ Mad libs
+   ~ Magic 8ball (Relocated!)
+   ~ Short Story Generator 
+   ~ Custom Number changer (Relocated!)
+   ~ Sentence/Word Reverser (Cloned!)
 
- -New Passcode Protection Systems will be added such as stars will be added. (v1.7)
+  - Uppdated random Password Generator
 
- - A new 'AI random fact messager' will be put in the 'messages' menu.
-  (v1.7)
-  - Blackjack in v1.7
+  - Wrong Input Bug Fixed! (v1.8)
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-
-  - a new game 'Fight' will be added to the 'Games' Menu. (v1.9)
-
-  - Credits in the 'Help' Menu (v1.7)
-
-  - BlackJack Friend Edition will be released in v1.7 or v1.8
+  - BlackJack Friends Version Coming Out! (v1.9)
 
   - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors (v2)
+
+  -TicTacToe will have an AI bot(v2)
+
+  - A new game 'Fight' will be added to the 'Games' Menu. (v1.9)
+  
+

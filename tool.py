@@ -146,66 +146,78 @@ def mimc():
 
 
 def calc():
-  print("Ayooo! This is a Caluculater!")
+  print("Ayooo! This is a Calculator!")
   time.sleep(1)
-  print("Type what you would like to do!")
-  time.sleep(1)
-  print("Type 1: Add")
-  time.sleep(.5)
-  print("Type 2: Subtract")
-  time.sleep(.5)
-  print("Type 3: Divide")
-  time.sleep(.5)
-  print("Type 4: Multiply")
-  time.sleep(1)
-  x = int(input("Your choice: "))
-  div = 0
-  mul = 0
-  sub = 0
-  add = 0
-  if x == 1:
-    y = int(input("How many values would you like to add?: "))
+  while True:
+    print("Type what you would like to do!")
+    time.sleep(1)
+    print("Type '1': Add")
     time.sleep(.5)
-    for a in range(y):
-      b = int(input("Value: "))
+    print("Type '2': Subtract")
+    time.sleep(.5)
+    print("Type '3': Divide")
+    time.sleep(.5)
+    print("Type '4': Multiply")
+    time.sleep(1)
+    x = int(input("Your choice: "))
+    div = 0
+    mul = 0
+    sub = 0
+    add = 0
+    if x == 1:
+      y = int(input("How many values would you like to add?: "))
       time.sleep(.5)
-      add = add + b
-    print("Your total value is",add)
-  elif x == 2:
-    y = int(input("How many values would you like to subtract?: "))
-    time.sleep(.5)
-    r = input("Starting value: ")
-    time.sleep(.5)
-    sub = r
-    for a in range(y-1):
-      b = int(input("Value: "))
+      for a in range(y):
+        b = int(input("Value: "))
+        time.sleep(.5)
+        add = add + b
+      print("Your total value is",add)
+    elif x == 2:
+      y = int(input("How many values would you like to subtract?: "))
       time.sleep(.5)
-      sub = sub - b
-    print("Your total value is",sub)
-  elif x == 4:
-    y = int(input("How many values would you like to multiply?: "))
-    time.sleep(.5)
-    r = int(input("Starting value: "))
-    time.sleep(.5)
-    mul = r
-    for a in range(y-1):
-      b = int(input("Value: "))
+      r = input("Starting value: ")
       time.sleep(.5)
-      mul = mul * b
-    print("Your total value is",mul)
-  elif x == 3:
-    y = int(input("How many values would you like to divide?: "))
-    time.sleep(.5)
-    r = int(input("Starting value: "))
-    time.sleep(.5)
-    div = r
-    for a in range(y-1):
-      b = int(input("Value: "))
+      sub = r
+      for a in range(y-1):
+        b = int(input("Value: "))
+        time.sleep(.5)
+        sub = sub - b
+      print("Your total value is",sub)
+    elif x == 4:
+      y = int(input("How many values would you like to multiply?: "))
       time.sleep(.5)
-      div = div//b
-    print("Your total value is",div)
-  else:
-    print("error...")
+      r = int(input("Starting value: "))
+      time.sleep(.5)
+      mul = r
+      for a in range(y-1):
+        b = int(input("Value: "))
+        time.sleep(.5)
+        mul = mul * b
+      print("Your total value is",mul)
+    elif x == 3:
+      y = int(input("How many values would you like to divide?: "))
+      time.sleep(.5)
+      r = int(input("Starting value: "))
+      time.sleep(.5)
+      div = r
+      for a in range(y-1):
+        b = int(input("Value: "))
+        time.sleep(.5)
+        div = div//b
+      print("Your total value is",div)
+    else:
+      print("error...")
+    time.sleep(1)
+    jk = input("Would like to do another calculation? (Type 'Yes' or 'No'): ").lower()
+    time.sleep(1)
+    if jk == "yes":
+      print("Ok!")
+      time.sleep(1)
+    else:
+      print ("Ok!")
+      time.sleep(1)
+      break
+
 
 
 
@@ -461,3 +473,22 @@ def ods():
     time.sleep (1)
     print (f"Low:{values[0]}")
     print (f"High:{values[newx]}")
+
+
+def ranpass():
+  h = ("")
+  print("Hello! This is a Random password generator!")
+  time.sleep(1)
+  print ("The Password that it generates will have letters, numbers, and special characters!")
+  time.sleep(2)
+  x = int(input("How many characters would you like your password to be?: "))
+  time.sleep(2)
+  for d in range(x):
+    y = random.choice(['a','q','w','e','r','t','y','u','i','o','p','s','d','d','f','g','h','j','k','l','z','x','c','v','b','n','m','1','2','3','4','5','6','7','8','9','0',"!",'@','#','$','%','6','&','*'])
+    h = (h + y)
+
+  print("Here is your new password!:",h)
+  time.sleep(2)
+  print("Stay safe my friend!")
+  time.sleep(1.5)
+  print("Sending you back to main...")

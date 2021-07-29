@@ -1,11 +1,35 @@
 {
   "files": {
+    "games.py": [
+      {
+        "id": "221c86e1-dbac-4b7c-bbc9-4e03e0ca08df",
+        "line": 328,
+        "version": 781,
+        "index": 15908
+      }
+    ],
+    "sussy.txt": [
+      {
+        "id": "f119a803-deef-4a40-a83c-033a3aea75fe",
+        "line": 1,
+        "version": 8,
+        "index": 0
+      }
+    ],
     "tool.py": [
       {
         "id": "6d50de91-b697-4405-9ad7-62afbe9c5147",
-        "line": 463,
-        "version": 384,
-        "index": 11880
+        "line": 475,
+        "version": 665,
+        "index": 12262
+      }
+    ],
+    "vc.txt": [
+      {
+        "id": "505fc77f-d6de-4861-ade1-2b4c118f8089",
+        "line": 136,
+        "version": 5051,
+        "index": 4194
       }
     ]
   }
