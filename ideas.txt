@@ -5,8 +5,3 @@
 - Make shop
 - Shop items - (have actions)
 
-
-- Emojify
-
-
-- Change Color of different menus(Ex. Main Menu - White, Tools Menu - Blue, Games Menu - Green)

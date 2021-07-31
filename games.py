@@ -11,31 +11,40 @@ def rpsdhaya():
   time.sleep(1)
   print("*Type either 'Rock', 'Paper', 'Scissors'*")
   time.sleep(1)
-  x = input("Write what you will play: ").lower()
-  y = random.choice(["rock", "paper", "scissors"])
-  print(f"I choose {y}")
-
-  if x == y:
-    print("Its a tie!")
-
-  elif x == "paper" and y == "rock":
-    print("Paper covers rock! You win!")
-
-  elif x == "paper" and y == "scissors":
-    print("Scissors cuts paper! You lose!")
-
-  elif x == "scissors" and y == "paper":
-    print("Scissors cuts paper! You win!")
-
-  elif x == "scissors" and y == "rock":
-    print("Rock smashes scissors! You lose!")
-
-  elif x == "rock" and y == "paper":
-    print("Paper covers rock! You lose!")
-
-  elif x == "rock" and y == "scissors":
-    print("Rock smashes scissors! You win!")
+  while True:
+    x = input("Write what you will play: ").lower()
+    y = random.choice(["rock", "paper", "scissors"])
     time.sleep(1)
+    print(f"I choose {y}")
+    time.sleep(1)
+    r = x[0]
+    f = y[0]
+
+    if r == f:
+      print("Its a tie!")
+      break
+    elif r == "p" and f == "r":
+      print("Paper covers rock! You win!")
+      break
+    elif r == "p" and f == "s":
+      print("Scissors cuts paper! You lose!")
+      break
+    elif r == "s" and f == "p":
+      print("Scissors cuts paper! You win!")
+      break
+    elif r == "s" and f == "r":
+      print("Rock smashes scissors! You lose!")
+      break
+    elif r == "r" and f == "p":
+      print("Paper covers rock! You lose!")
+      break
+    elif r == "r" and f == "s":
+      print("Rock smashes scissors! You win!")
+      break
+
+    else:
+      print("Sorry, I do not understand. Please try again.")
+      time.sleep(1)
 
 def g():
   time.sleep(1)
@@ -174,13 +183,13 @@ def ttt():
       time.sleep (1)
   while True:
     if gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == t or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == t :
-      print ("You win!. Press 'Run' to play again!")
+      print ("You win!")
       break
     elif gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == ot or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == ot :
-      print ("I Win! Press run to play again!")
+      print ("I Win!")
       break
     elif gameboard [0][0] != blank and gameboard [0][1] != blank and gameboard [0][2] != blank and  gameboard [1][0] != blank and gameboard [1][1] != blank and gameboard [1][2] != blank and gameboard [2][0] != blank and gameboard [2][1] != blank and gameboard [2][2] != blank:
-      print ("Draw! Press 'run' to play again.")
+      print ("Draw!")
       break
     else:
       print (f"Choose the Row and Column of where you want to put your {t}.(Row - 0,1,2) (Column - 0,1,2)")
@@ -280,55 +289,12 @@ def rpssaarth():
       elif their == 2:
         print ("Scissor cuts Paper! You lose!!!")
         time.sleep (1)
-        print ("Press run to play again!")
         break
       elif their == 3:
         print ("Tie! We have to redo it! ")
         time.sleep (1)
     else:
       print ("Internal error")
-
-
-def nc():
-  x = input("what number do you want me to change?")
-  maximum = input("what is the maximum amount I can change it by?")
-  y = int(x)
-  z = (random.randint(1,int(maximum)))
-  signs = ["+", "-"]
-  sign = (random.choice(signs))
-  if sign == "+" :
-    newx = y + z
-  elif sign == "-":
-    newx = y - z
-  time.sleep (2)
-  print (f"here is your changed number:{newx}")
-  time.sleep (2.5)
-  print (f"here is the amount by which I changed your number: {z}")
-
-
-
-def bol():
-  print("Hello! This is the *Magic 8ball*!!!")
-  time.sleep(1.5)
-  print("Just ask me a question and I'll respond with how likely is is to happen!")
-  time.sleep(2)
-  while True:
-    input("What is your question?: ")
-    time.sleep(1)
-    print (random.choice(["No.","Maybe.","Definetly not.","Without a doubt.","You may rely on it.","It is certain.","It is decidedly so.","Without a doubt.","Yes, definitely.","You may rely on it.","As I see it, yes.","Most likely.","Outlook good.","Yes.","Signs point to yes.","Reply hazy try again.","Ask again later.","Better not tell you now.","Cannot predict now.","Concentrate and ask again.","Don't count on it.","My reply is no.","My sources say no.","Outlook not so good.","Very doubtful."]))
-    time.sleep(1)
-    print("Thank you for using the *Magic 8ball*!")
-    time.sleep(1)
-    bob = input("Would you like to ask another question? (Type 'Yes' or 'No'): ").lower()
-    if bob == "yes":
-      print("Ok!")
-      time.sleep(1)
-    else: 
-      print("Ok!")
-      break
-  time.sleep(1)
-  print("Sending you back to main...")
-
 
 
 def bj():
@@ -377,8 +343,7 @@ def bj():
         print ("You Busted!")
         time.sleep(.5)
         print (f"Here were your cards: {usercards}")
-        time.sleep (1)
-        print ("Press 'run' to play again!")
+        time.sleep(1)
         break
       else:
         time.sleep (1)
@@ -397,7 +362,6 @@ def bj():
           if sum(botcards) > 21:
             print ("The Bot Busted! You win!")
             time.sleep (1)
-            print ("Press 'run' to play again!")
             break
           else:
             time.sleep (1)
@@ -419,10 +383,10 @@ def bj():
           break
         elif sum(botcards) < sum(usercards):
           double = 1
-          print ("You win! Bot loses! Press 'Run' to play again!")
+          print ("You win! Bot loses!")
           break
         else:
-          print ("Tie! Press 'Run' to play again!")
+          print ("Tie!")
           break
       else:
         print ("The bot has decided to hit!")
@@ -443,14 +407,14 @@ def bj():
                 time.sleep (1)
                 if sum(botcards) > sum(usercards):
                   double = 1
-                  print("Bot Wins! You Lose! Press 'Run' to play again!")
+                  print("Bot Wins! You Lose!")
                   break
                 elif sum(botcards) < sum(usercards):
                   double = 1
-                  print ("You win! Bot loses! Press 'Run' to play again!")
+                  print ("You win! Bot loses!")
                   break
                 else:
-                  print("Tie! Press 'Run' To play again!")
+                  print("Tie!")
                   break
             else:
               print ("The bot decided to hit!")

@@ -1,4 +1,4 @@
-v1.0: 7/26/21 2:12 - 4:05 PM (S/D)
+v1.0: 7/26/21 (S/D)
 - Created the "tools" menu and all the tools in it.
 - Took away the "Are you sure?" option in games.
 - Code can now be longer than 4 numbers.
@@ -7,7 +7,7 @@ v1.0: 7/26/21 2:12 - 4:05 PM (S/D)
 
 
 
-v1.1 7/26/21 7:24 - 8:11 PM (S)
+v1.1 7/26/21 (S)
 - Renovated the "Changing Passcode" Module with a integrated Old Passcode/New Passcode system
 - Fixed A bug where the 'code invalid' error wasn't running.
 - Added 'sentence letter counter' to tools menu.
@@ -17,7 +17,7 @@ v1.1 7/26/21 7:24 - 8:11 PM (S)
 
 
 
-v1.2 7/26/21 8:49 - 9:13 PM (D)
+v1.2 7/26/21 (D)
 - Changed version name
 - Fixed the 'Changing Passcode' bug
 - Added the 'Messages' option to the Main Menu
@@ -28,17 +28,14 @@ v1.2 7/26/21 8:49 - 9:13 PM (D)
 
 
 
-v1.3 7/27/21 8:35 - 10:58 AM (D)
+v1.3 7/27/21 (D)
 - Changed Version Name
 - Changed some of the time.sleep() timings
 - Finished 'Messages' section (no bugs) (-i hope)
 - AI messaging feature Released!
 
 
-
-
-
-v1.4 7/27/21 11:01 - 11:44 AM (S)
+v1.4 7/27/21 (S)
 - worked on debugging the messages feature.
 - Added a new function in 'message.py' Which texts self esteem boosters. (def feelbetter():)
 - Fixed a error in the function calling codes and added function responses for all 6 items in 'Messages' menu.
@@ -53,7 +50,7 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
 
 
-- v1.5 7/27/21 2:04 - 3:31 (S/D)
+- v1.5 7/27/21 (S/D)
 - Added 'Outlier Detection' To 'tools' menu from scratch
 - Created the 'Help' Menu in main with all of its corresponding code.
 - Added the 'Number Changer' to  'Games' menu
@@ -64,7 +61,7 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 
 
 
-   v1.6 7/28/21 2:21 - 4:14 PM (S/D)
+   v1.6 7/28/21 (S/D)
 - Renovated the Outlier Detection Program with a proportional detection range (detran) instead of a set detection range (detran).
 - Fixed the two-outlier - two range bug with a additional secondary detection system. (SDS)
 - Added the 'Announcements & Future Releases' section to vc.txt
@@ -73,7 +70,9 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 - Work has begun on the v2 milestone!
 
 
-  v1.7 7/29/21 10:02 - 11:42 AM (S/D)
+
+
+  v1.7 7/29/21 (S/D)
 - Made all of the "Return to Main Menu" as the first option so that when we add on more things we dont have to keep changing the number to the 'Return to Main Menu' too.
 - Added 'Credits' to the help menu
 - Added 'Random Password Generator' to tools
@@ -82,55 +81,82 @@ v1.4 7/27/21 11:01 - 11:44 AM (S)
 - BlackJack v1 released without any bugs!
 - Fixed another file.save passcode bug
 
+
+  v1.8 7/29/21 - 8/01/21 (S/D)
+- Deleted 'tool2.py' file
+- Added 'fun.py' file
+- Realeased Fun Menu!!
+  ~ Mad libs
+  ~ Magic 8ball (Relocated!)
+  ~ Short Story Line Generator 
+  ~ Custom Number changer (Relocated!)
+  ~ Sentence/Word Reverser (Cloned!)
+- Updated random Password Generator
+- 'Wrong Input Crash' Bug Fixed!
+- Fixed a bunch of micellaneous bugs!
+- Made it so that even if you spell the input wrong, it still understands.
+
+
 #######################################################
 
-                  ---ASSIGNMENTS---
+                 ---ASSIGNMENTS---
 
-*************SAARTHS***************
 
-- AI bot for tictactoe(S) 0% Complete
+~~~~~~~~~~~~~~~~~~~~~~SAARTHS~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Madlibs (S) 0%
+- AI bot for tictactoe(S) ~v2.0~
 
-- BlackJack Friends Version (S) 0%
+- Add new Madlibs story templates (S) ~v1.9~
 
-*************DHAYAS***************
+- BlackJack Friends Version (S) ~v1.9~
 
-- TextBased Adventure Game (D) 0% Complete
+- Adding 'fight' to 'GAMES MENU' ~v1.9~
 
-- Short Story Generator (D)0%
+- Update Credits ~v1.9~
 
-- Update Random Password Generator (D) 0%
 
-- Add Fun Menu (D) 0%
+~~~~~~~~~~~~~~~~~~~~~~DHAYAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Wrong input bug! (D) 0%
+- TextBased Adventure Game (D) ~v2.0~
+
+- Adding Currency (D) ~v2.0~
+
+- Fix the 'press run to play again' bug ~v1.9~ 
+
+
+~~~~~~~~~~~~~~~~~~~~~~UNKOWN~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- None
 
 ########################################################
+
 
          -- ANNOUNCEMENTS & FUTURE RELEASES --
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  - Fun Menu Coming out in v1.8!
-   ~ Mad libs
-   ~ Magic 8ball (Relocated!)
-   ~ Short Story Generator 
-   ~ Custom Number changer (Relocated!)
-   ~ Sentence/Word Reverser (Cloned!)
+                     -- v1.9 -- 
 
-  - Uppdated random Password Generator
+  - BlackJack 'Friends' Version Coming Out!
 
-  - Wrong Input Bug Fixed! (v1.8)
-  
+  - A new game 'Fight' will be added to the 'Games' Menu
+
+  - New madlib story template!
+
+  - Fixed the 'Press run to play again' bug
+
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  - BlackJack Friends Version Coming Out! (v1.9)
+                     -- v2.0 -- 
 
-  - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors (v2)
+  - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors
 
-  -TicTacToe will have an AI bot(v2)
-
-  - A new game 'Fight' will be added to the 'Games' Menu. (v1.9)
+  - TicTacToe will have an AI bot
   
+  - TextBased Adventure Game will be added to 'Games'
 
+  - A new feature 'Currency' is added!
+
+  
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

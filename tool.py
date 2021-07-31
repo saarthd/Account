@@ -277,20 +277,6 @@ def tc():
 
 
 
-
-
-
-def strrev():
-  print ("Hello! This is a sentence/Word reverser!")
-  time.sleep (1)
-  word = input("what do you want me to reverse?:")
-  peice = (word)[::-1]
-  print (f"here is it reversed: {peice}")
-
-    
-
-
-
 def slc():
   x = input("what sentence/word do you want me to count?: ")
   y = len(x)
@@ -484,7 +470,7 @@ def ranpass():
   x = int(input("How many characters would you like your password to be?: "))
   time.sleep(2)
   for d in range(x):
-    y = random.choice(['a','q','w','e','r','t','y','u','i','o','p','s','d','d','f','g','h','j','k','l','z','x','c','v','b','n','m','1','2','3','4','5','6','7','8','9','0',"!",'@','#','$','%','6','&','*'])
+    y = random.choice(['A','Q','W','E','R','T','Y','U','I','O','P','S','D','F','G','H','J','K','L','Z','C','V','B','N','M','a','q','w','e','r','t','y','u','i','o','p','s','d','d','f','g','h','j','k','l','z','x','c','v','b','n','m','1','2','3','4','5','6','7','8','9','0',"!",'@','#','$','%','6','&','*'])
     h = (h + y)
 
   print("Here is your new password!:",h)
