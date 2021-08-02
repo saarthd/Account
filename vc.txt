@@ -82,7 +82,10 @@ v1.4 7/27/21 (S)
 - Fixed another file.save passcode bug
 
 
-  v1.8 7/29/21 - 8/01/21 (S/D)
+
+
+
+  v1.8 7/29/21 (S/D)
 - Deleted 'tool2.py' file
 - Added 'fun.py' file
 - Realeased Fun Menu!!
@@ -93,27 +96,29 @@ v1.4 7/27/21 (S)
   ~ Sentence/Word Reverser (Cloned!)
 - Updated random Password Generator
 - 'Wrong Input Crash' Bug Fixed!
-- Fixed a bunch of micellaneous bugs!
-- Made it so that even if you spell the input wrong, it still understands.
+- Fixed a few micellaneous bugs!
+- Made inputs so that even if you spell the input wrong, it still understands.
+
+
+
+
+
+  v1.9 8/02/21 (S/D)
+- BlackJack now has '2 player' Option!
+- 'Fight' is added to 'Fun' Menu!!!
+- New Madlibs story template!
+- Renovated Credits Menu!
+- Fixed the 'Press run to play again' bug
+
 
 
 #######################################################
 
                  ---ASSIGNMENTS---
 
-
 ~~~~~~~~~~~~~~~~~~~~~~SAARTHS~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- AI bot for tictactoe(S) ~v2.0~
-
-- Add new Madlibs story templates (S) ~v1.9~
-
-- BlackJack Friends Version (S) ~v1.9~
-
-- Adding 'fight' to 'GAMES MENU' ~v1.9~
-
-- Update Credits ~v1.9~
-
+- Adding color to all the menus and adding color to the games/tools/messages/fun functions. ~v2.0~
 
 ~~~~~~~~~~~~~~~~~~~~~~DHAYAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -121,8 +126,7 @@ v1.4 7/27/21 (S)
 
 - Adding Currency (D) ~v2.0~
 
-- Fix the 'press run to play again' bug ~v1.9~ 
-
+- Add 'Kick' to Fight (D) ~v2.1~
 
 ~~~~~~~~~~~~~~~~~~~~~~UNKOWN~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -135,28 +139,17 @@ v1.4 7/27/21 (S)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-                     -- v1.9 -- 
-
-  - BlackJack 'Friends' Version Coming Out!
-
-  - A new game 'Fight' will be added to the 'Games' Menu
-
-  - New madlib story template!
-
-  - Fixed the 'Press run to play again' bug
-
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-                     -- v2.0 -- 
+                     -- v2.0 -- (Wednesday)
 
   - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors
 
-  - TicTacToe will have an AI bot
+  - TicTacToe will have an AI bot!
   
   - TextBased Adventure Game will be added to 'Games'
 
   - A new feature 'Currency' is added!
+
+  - Relocate 'Dice Rolling Simulator' from 'Games' to 'Fun'
 
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -183,13 +183,13 @@ def ttt():
       time.sleep (1)
   while True:
     if gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == t or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == t :
-      print ("You win!")
+      print ("You win!. Press 'Run' to play again!")
       break
     elif gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == ot or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == ot :
-      print ("I Win!")
+      print ("I Win! Press run to play again!")
       break
     elif gameboard [0][0] != blank and gameboard [0][1] != blank and gameboard [0][2] != blank and  gameboard [1][0] != blank and gameboard [1][1] != blank and gameboard [1][2] != blank and gameboard [2][0] != blank and gameboard [2][1] != blank and gameboard [2][2] != blank:
-      print ("Draw!")
+      print ("Draw! Press 'run' to play again.")
       break
     else:
       print (f"Choose the Row and Column of where you want to put your {t}.(Row - 0,1,2) (Column - 0,1,2)")
@@ -203,17 +203,162 @@ def ttt():
       else:
         gameboard [x][y] = t 
         while True:
-          v = random.randint(0,2)
-          z = random.randint(0,2)
-          if not gameboard [v][z] == blank:
+          if gameboard [0][0] == ot and gameboard [0][1] == ot and gameboard [0][2] == blank:
+            r = 0
+            c = 2
+          elif gameboard [0][0] == ot and gameboard [0][1] == blank and gameboard [0][2] == ot:
+            r = 0
+            c = 1
+          elif gameboard [0][0] == blank and gameboard [0][1] == ot and gameboard [0][2] == ot:
+            r = 0
+            c = 0
+          elif gameboard [1][0] == ot and gameboard [1][1] == ot and gameboard [1][2] == blank:
+            r = 1
+            c = 2
+          elif gameboard [1][0] == ot and gameboard [1][1] == blank and gameboard [1][2] == ot:
+            r = 1
+            c = 1
+          elif gameboard [1][0] == blank and gameboard [1][1] == ot and gameboard [1][2] == ot:
+            r = 1
+            c = 0
+          elif gameboard [2][0] == ot and gameboard [2][1] == ot and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [2][0] == ot and gameboard [2][1] == blank and gameboard [2][2] == ot:
+            r = 2
+            c = 1
+          elif gameboard [2][0] == blank and gameboard [2][1] == ot and gameboard [2][2] == ot:
+            r = 2
+            c = 0
+          elif gameboard [0][0] == ot and gameboard [1][0] == ot and gameboard [2][0] == blank:
+            r = 2
+            c = 0
+          elif gameboard [0][0] == ot and gameboard [1][0] == blank and gameboard [2][0] == ot:
+            r = 1
+            c = 0
+          elif gameboard [0][0] == blank and gameboard [1][0] == ot and gameboard [2][0] == ot:
+            r = 0
+            c = 0
+          elif gameboard [0][1] == ot and gameboard [1][1] == ot and gameboard [2][1] == blank:
+            r = 2
+            c = 1
+          elif gameboard [0][1] == ot and gameboard [1][1] == blank and gameboard [2][1] == ot:
+            r = 1
+            c = 1
+          elif gameboard [0][1] == blank and gameboard [1][1] == ot and gameboard [2][1] == ot:
+            r = 0
+            c = 1
+          elif gameboard [0][2] == ot and gameboard [1][2] == ot and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [0][2] == ot and gameboard [1][2] == blank and gameboard [2][2] == ot:
+            r = 1
+            c = 2
+          elif gameboard [0][2] == blank and gameboard [1][2] == ot and gameboard [2][2] == ot:
+            r = 0
+            c = 2
+          elif gameboard [0][0] == ot and gameboard [1][1] == ot and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [0][0] == ot and gameboard [1][1] == blank and gameboard [2][2] == ot:
+            r = 1
+            c = 1
+          elif gameboard [0][0] == blank and gameboard [1][1] == ot and gameboard [2][2] == ot:
+            r = 0
+            c = 0
+          elif gameboard [2][0] == ot and gameboard [1][1] == ot and gameboard [0][2] == blank:
+            r = 0
+            c = 2
+          elif gameboard [2][0] == ot and gameboard [1][1] == blank and gameboard [0][2] == ot:
+            r = 1
+            c = 1
+          elif gameboard [2][0] == blank and gameboard [1][1] == ot and gameboard [0][2] == ot:
+            r = 2
+            c = 0
+          elif gameboard [0][0] == t and gameboard [0][1] == t and gameboard [0][2] == blank:
+            r = 0
+            c = 2
+          elif gameboard [0][0] == t and gameboard [0][1] == blank and gameboard [0][2] == t:
+            r = 0
+            c = 1
+          elif gameboard [0][0] == blank and gameboard [0][1] == t and gameboard [0][2] == t:
+            r = 0
+            c = 0
+          elif gameboard [1][0] == t and gameboard [1][1] == t and gameboard [1][2] == blank:
+            r = 1
+            c = 2
+          elif gameboard [1][0] == t and gameboard [1][1] == blank and gameboard [1][2] == t:
+            r = 1
+            c = 1
+          elif gameboard [1][0] == blank and gameboard [1][1] == t and gameboard [1][2] == t:
+            r = 1
+            c = 0
+          elif gameboard [2][0] == t and gameboard [2][1] == t and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [2][0] == t and gameboard [2][1] == blank and gameboard [2][2] == t:
+            r = 2
+            c = 1
+          elif gameboard [2][0] == blank and gameboard [2][1] == t and gameboard [2][2] == t:
+            r = 2
+            c = 0
+          elif gameboard [0][0] == t and gameboard [1][0] == t and gameboard [2][0] == blank:
+            r = 2
+            c = 0
+          elif gameboard [0][0] == t and gameboard [1][0] == blank and gameboard [2][0] == t:
+            r = 1
+            c = 0
+          elif gameboard [0][0] == blank and gameboard [1][0] == t and gameboard [2][0] == t:
+            r = 0
+            c = 0
+          elif gameboard [0][1] == t and gameboard [1][1] == t and gameboard [2][1] == blank:
+            r = 2
+            c = 1
+          elif gameboard [0][1] == t and gameboard [1][1] == blank and gameboard [2][1] == t:
+            r = 1
+            c = 1
+          elif gameboard [0][1] == blank and gameboard [1][1] == t and gameboard [2][1] == t:
+            r = 0
+            c = 1
+          elif gameboard [0][2] == t and gameboard [1][2] == t and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [0][2] == t and gameboard [1][2] == blank and gameboard [2][2] == t:
+            r = 1
+            c = 2
+          elif gameboard [0][2] == blank and gameboard [1][2] == t and gameboard [2][2] == t:
+            r = 0
+            c = 2
+          elif gameboard [0][0] == t and gameboard [1][1] == t and gameboard [2][2] == blank:
+            r = 2
+            c = 2
+          elif gameboard [0][0] == t and gameboard [1][1] == blank and gameboard [2][2] == t:
+            r = 1
+            c = 1
+          elif gameboard [0][0] == blank and gameboard [1][1] == t and gameboard [2][2] == t:
+            r = 0
+            c = 0
+          elif gameboard [2][0] == t and gameboard [1][1] == t and gameboard [0][2] == blank:
+            r = 0
+            c = 2
+          elif gameboard [2][0] == t and gameboard [1][1] == blank and gameboard [0][2] == t:
+            r = 1
+            c = 1
+          elif gameboard [2][0] == blank and gameboard [1][1] == t and gameboard [0][2] == t:
+            r = 2
+            c = 0
+          else:
+            r = random.randint(0,2)
+            c = random.randint(0,2)
+          if not gameboard [r][c] == blank:
             print()
           else:
-            gameboard [v][z] = ot
+            gameboard [r][c] = ot
             break
         time.sleep (1)
         print ("Good Choice!")
         time.sleep (1.3)
-        print (f"I chose row {v},collumn {z}.")
+        print (f"I chose row {r},collumn {c}.")
         time.sleep (1)
         print ("Here is the Board:")
         time.sleep (0.7)
@@ -222,6 +367,10 @@ def ttt():
             print (gameboard[i][j],end='',sep="\t")
           print ("")
         time.sleep (2.5)
+
+
+
+
 def rpssaarth():
   print ("I am going to play Rock Paper Scissors with you!")
   time.sleep (3)
@@ -301,132 +450,328 @@ def bj():
   userstand = 0
   botstand = 0
   double = 0
+  rod = 1
+  stand1 = 0
+  stand2 = 0
   print("Hello! This is Blackjack!")
   time.sleep(1)
-  username = input("What is your name?: ")
   J = 10
   Q = 10
   K = 10
   time.sleep(1)
   A = random.choice([1,11])
-  card_options =[A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K]
-  deck = (random.sample(card_options, 20))
-  x = random.choice(deck)
-  usercards = [x]
-  y = random.choice(deck)
-  botcards = [y]
-  print ("Ok! Lets the Games Begin!")
-  time.sleep (1.5)
-  while True:
-    time.sleep (1)
-    print ("Bot's Cards:")
-    time.sleep (.5)
-    print (botcards)
-    time.sleep (.5)
-    print (f"{username}'s Cards:")
-    time.sleep(.5)
-    print (usercards)
+  card_options =[A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K,A,2,3,4,5,6,7,8,9,10,J,Q,K]
+  deck = (random.sample(card_options, 30))
+  print("1 player or 2 player? (1/2) ")
+  time.sleep (0.5)
+  opt = int(input("->"))
+  time.sleep (1)
+  if opt == 1:
+    username = input("What is your name:")
+    x = random.choice(deck)
+    usercards = [x]
+    y = random.choice(deck)
+    botcards = [y]
+    print ("Ok! Lets the Games Begin!")
     time.sleep (1.5)
-    print ("Would you like to hit or stand?(h/s)")
-    hs = input("->").lower()
-    time.sleep (1)
-    if hs == "h":
-      print ("Sure!")
-      card = random.choice(deck)
+    while True:
       time.sleep (1)
-      print (" You got a . . . ")
-      time.sleep(1.6)
-      print (card)
-      usercards.append(card)
-      if sum(usercards) > 21:
+      print ("Bot's Cards:")
+      time.sleep (.5)
+      print (botcards)
+      time.sleep (.5)
+      print (f"{username}'s Cards:")
+      time.sleep(.5)
+      print (usercards)
+      time.sleep (1.5)
+      print ("Would you like to hit or stand?(h/s)")
+      hs = input("->").lower()
+      time.sleep (1)
+      if hs == "h":
+        print ("Sure!")
+        card = random.choice(deck)
         time.sleep (1)
-        print ("You Busted!")
-        time.sleep(.5)
-        print (f"Here were your cards: {usercards}")
-        time.sleep(1)
-        break
-      else:
+        print (" You got a . . . ")
+        time.sleep(1.6)
+        print (card)
+        usercards.append(card)
+        if sum(usercards) > 21:
+          time.sleep (1)
+          print ("You Busted!")
+          time.sleep(.5)
+          print (f"Here were your cards: {usercards}")
+          time.sleep (1)
+          print ("Press 'run' to play again!")
+          break
+        else:
+          time.sleep (1)
+          print ("It is the bot's turn.")
+          time.sleep (2)
+          if sum(botcards) > 16 and sum(botcards) < 21:
+            print ("The bot has decided to stand.")
+            time.sleep(1)
+            print ("It is now your turn.")
+          else:
+            print ("The bot has decided to hit!")
+            time.sleep(1)
+            botcard = (random.choice(deck))
+            print (f"the bot got a {botcard}.")
+            botcards.append(botcard)
+            if sum(botcards) > 21:
+              print ("The Bot Busted! You win!")
+              time.sleep (1)
+              print ("Press 'run' to play again!")
+              break
+            else:
+              time.sleep (1)
+              print ("It is now your turn.")
+      elif hs == "s":
         time.sleep (1)
-        print ("It is the bot's turn.")
+        print ("Ok.")
+        time.sleep (1)
+        print ("You stand. It is now the bot's turn.")
+        userstand = 1
         time.sleep (2)
         if sum(botcards) > 16 and sum(botcards) < 21:
           print ("The bot has decided to stand.")
+          botstand = 1
           time.sleep(1)
-          print ("It is now your turn.")
+          if sum(botcards) > sum(usercards):
+            double = 1
+            print("Bot Wins! You Lose!")
+            break
+          elif sum(botcards) < sum(usercards):
+            double = 1
+            print ("You win! Bot loses! Press 'Run' to play again!")
+            break
+          else:
+            print ("Tie! Press 'Run' to play again!")
+            break
         else:
           print ("The bot has decided to hit!")
           time.sleep(1)
-          botcard = (random.choice(deck))
-          print (f"the bot got a {botcard}.")
-          botcards.append(botcard)
-          if sum(botcards) > 21:
-            print ("The Bot Busted! You win!")
-            time.sleep (1)
-            break
-          else:
-            time.sleep (1)
-            print ("It is now your turn.")
-    elif hs == "s":
-      time.sleep (1)
-      print ("Ok.")
-      time.sleep (1)
-      print ("You stand. It is now the bot's turn.")
-      userstand = 1
-      time.sleep (2)
-      if sum(botcards) > 16 and sum(botcards) < 21:
-        print ("The bot has decided to stand.")
-        botstand = 1
-        time.sleep(1)
-        if sum(botcards) > sum(usercards):
-          double = 1
-          print("Bot Wins! You Lose!")
-          break
-        elif sum(botcards) < sum(usercards):
-          double = 1
-          print ("You win! Bot loses!")
-          break
-        else:
-          print ("Tie!")
-          break
-      else:
-        print ("The bot has decided to hit!")
-        time.sleep(1)
-        while True:
-          botcard = (random.choice(deck))
-          print (f"the bot got a {botcard}.")
-          botcards.append(botcard)
-          if userstand == 1:
-            time.sleep(1)
-            print ("It is now the bot's turn.")
-            if sum(botcards) > 16:
-              if sum(botcards) > 21:
-                time.sleep(1)
-                break
-              else:
-                print ("The bot decided to stand.")
-                time.sleep (1)
-                if sum(botcards) > sum(usercards):
-                  double = 1
-                  print("Bot Wins! You Lose!")
-                  break
-                elif sum(botcards) < sum(usercards):
-                  double = 1
-                  print ("You win! Bot loses!")
+          while True:
+            botcard = (random.choice(deck))
+            print (f"the bot got a {botcard}.")
+            botcards.append(botcard)
+            if userstand == 1:
+              time.sleep(1)
+              print ("It is now the bot's turn.")
+              if sum(botcards) > 16:
+                if sum(botcards) > 21:
+                  time.sleep(1)
                   break
                 else:
-                  print("Tie!")
-                  break
+                  print ("The bot decided to stand.")
+                  time.sleep (1)
+                  if sum(botcards) > sum(usercards):
+                    double = 1
+                    print("Bot Wins! You Lose! Press 'Run' to play again!")
+                    break
+                  elif sum(botcards) < sum(usercards):
+                    double = 1
+                    print ("You win! Bot loses! Press 'Run' to play again!")
+                    break
+                  else:
+                    print("Tie! Press 'Run' To play again!")
+                    break
+              else:
+                print ("The bot decided to hit!")
+          if double == 1:
+            break
+          else:    
+            if sum(botcards) > 21:
+              print ("The Bot Busted! You win!")
+              time.sleep (1)
+              print ("Press 'run' to play again!")
+              break
             else:
-              print ("The bot decided to hit!")
-        if double == 1:
-          break
-        else:    
-          if sum(botcards) > 21:
-            print ("The Bot Busted! You win!")
+              time.sleep (1)
+              print ("It is now your turn.")
+  else:
+    player1 = input("Player 1: What is your Name: ")
+    time.sleep (1.6)
+    player2 = input("Player 2: What is your Name: ")
+    time.sleep (1)
+    print ("Initializing Game . . . ")
+    time.sleep (2)
+    print ("Ok! Ready?")
+    time.sleep (1)  
+    print ("3!")
+    time.sleep (1)
+    print ("2!")
+    time.sleep (1)
+    print ("1!")
+    time.sleep (1)
+    print ("Let the Games Begin!!!")
+    time.sleep (1)
+    x = random.choice(deck)
+    cards1 = [x]
+    y = random.choice(deck)
+    cards2 = [y]
+    while True:
+      time.sleep (1)
+      print (f" {player1}'s Cards:")
+      time.sleep (0.5)
+      print (cards1)
+      time.sleep (0.5)
+      print (f"{player2}'s Cards:")
+      time.sleep (0.5)
+      print (cards2)
+      time.sleep (2)
+      if stand1 == 0:
+        print (f"{player1}: Would You like to Hit or Stand? (h/s)")
+        time.sleep (0.6)
+        z1 = input("->").lower()
+        time.sleep (1)
+        if z1[0] == "h":  
+          print ("Sure!")
+          card1 = random.choice(deck)
+          time.sleep (1)
+          print ("You got a . . . ")
+          time.sleep (2)
+          print (f"    {card1}    ")
+          cards1.append(card1)
+          time.sleep (1)
+          if sum(cards1) > 21:
+            print (f"{player1} busts! {player2} Wins!!! ")
+            time.sleep (2)
             break
           else:
+            if stand2 == 0:
+              print (f"It is now {player2}'s turn.")
+              time.sleep (1)
+              print (f"{player2}: Would You like to Hit or Stand? (h/s)")
+              time.sleep (0.6)
+              z2 = input("->").lower()
+              time.sleep (1)
+              if z2[0] == "h":
+                print ("Sure!")
+                card2 = random.choice(deck)
+                time.sleep (1)
+                print ("You got a . . . ")
+                time.sleep (1)
+                print (f"   {card2}   ")
+                cards2.append(card2)
+                time.sleep (2)
+                if sum(cards2) > 21:
+                  print (f"{player2} busts! {player1} Wins!!!")
+                  time.sleep (2)
+                  break
+                else:
+                  rod = rod + 1
+                  print (f" -- ROUND {rod} -- ")
+                  time.sleep (1)
+              elif z2[0] == "s":
+                print ("Ok.")
+                stand2 = 1
+                time.sleep (1.6)
+                rod = rod + 1
+                print (f" -- ROUND {rod} -- ")
+                time.sleep (1)
+            else:
+              time.sleep (1)
+              rod = rod + 1
+              print (f" -- ROUND {rod} -- ")
+              time.sleep (1)
+        elif z1[0] == "s":
+          print ("Sure!")
+          stand1 = 1
+          time.sleep (2)
+          if stand2 == 0:
+            print (f"It is now {player2}'s turn.")
             time.sleep (1)
-            print ("It is now your turn.")
-  time.sleep (1)
-  print ("Sending You back to main ... ")
-  time.sleep (2)
+            print (f"{player2}: Would You like to Hit or Stand? (h/s)")
+            time.sleep (0.5)
+            z2 = input("->").lower()
+            time.sleep (1)
+            if z2[0] == "h":
+              print ("Sure!")
+              time.sleep (1)
+              card2 = random.choice(deck)
+              print ("You got a . . . ")
+              time.sleep (2)
+              print (f"   {card2}   ")
+              cards2.append(card2)
+              time.sleep (2)
+              if sum(cards2) > 21:
+                print (f"{player1} busts! {player2} Wins!!!")
+                time.sleep (2)
+                break
+              else:
+                rod = rod + 1
+                print (f" -- ROUND {rod} -- ")
+                time.sleep (1)
+            elif z2[0] == "s":
+              print ("Ok.")
+              time.sleep (2)
+              print ("The winner is . . . ")
+              time.sleep (2)
+              if sum(cards2) < sum(cards1):
+                print (f"{player1}!!! Congratulations!!!")
+                time.sleep (3)
+                break
+              elif sum(cards1) < sum(cards2):
+                print (f"{player2}!!! Congratulations!!!")
+                time.sleep (3)
+                break
+              else:
+                print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
+                time.sleep (3)
+                break
+          else:
+            time.sleep (1)
+            print ("The winner is . . . ")
+            time.sleep (2)
+            if sum(cards2) < sum(cards1):
+              print (f"{player1}!!! Congratulations!!!")
+              time.sleep (3)
+              break
+            elif sum(cards1) < sum(cards2):
+              print (f"{player2}!!! Congratulations!!!")
+              time.sleep (3)
+              break
+            else:
+              print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
+              time.sleep (3)
+              break
+      else:
+        print (f"{player2}: Would You like to Hit or Stand? (h/s)")
+        time.sleep (0.6)
+        z2 = input("->").lower()
+        time.sleep (1)
+        if z2[0] == "h":
+          print ("Sure!")
+          card2 = random.choice(deck)
+          time.sleep (1)
+          print ("You got a . . . ")
+          time.sleep (1)
+          print (f"   {card2}   ")
+          cards2.append(card2)
+          time.sleep (2)
+          if sum(cards2) > 21:
+            print (f"{player1} busts! {player2} Wins!!!")
+            time.sleep (2)
+            break
+          else:
+            rod = rod + 1
+            stand1 = 1
+            print (f" -- ROUND {rod} -- ")
+            time.sleep (1)
+        elif z2[0] == "s":
+          print ("Ok.")
+          time.sleep (2)
+          print ("The winner is . . . ")
+          time.sleep (2)
+          if sum(cards2) < sum(cards1):
+            print (f"{player1}!!! Congratulations!!!")
+            time.sleep (3)
+            break
+          elif sum(cards1) < sum(cards2):
+            print (f"{player2}!!! Congratulations!!!")
+            time.sleep (3)
+            break
+          else:
+            print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
+            time.sleep (3)
+            break

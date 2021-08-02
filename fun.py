@@ -40,16 +40,41 @@ def nc():
   print (f"here is your changed number:{newx}")
   time.sleep (2.5)
   print (f"here is the amount by which I changed your number: {z}")
+  time.sleep(1)
+  print("Sending you back to main...")
 
 
 
 
 def strrev():
-  print ("Hello! This is a sentence/Word reverser!")
+  print ("Hello! This is a Sentence/Word reverser!")
   time.sleep (1)
-  word = input("what do you want me to reverse?:")
-  peice = (word)[::-1]
-  print (f"here is it reversed: {peice}")
+  while True:
+    word = input("what do you want me to reverse?:")
+    peice = (word)[::-1]
+    print (f"here is it reversed: {peice}")
+    time.sleep(1)
+    while True:
+      x = input("Would you like to do another one?: ").lower()
+      time.sleep(1)
+      if x[0] == "y":
+        print("Ok!")
+        break
+        time.sleep(1)
+      elif x[0] == "n":
+        print("")
+        print("Ok!")
+        time.sleep(1)
+        break
+      else:
+        print("Sorry, I could do not understand. Please try again.")
+        time.sleep(1)
+    if x[0] == "n":
+      break
+    else:
+      pass
+  time.sleep(1)
+  print("Sending you back to main...")
 
     
 def slg():
@@ -87,6 +112,8 @@ def slg():
       break
     else:
       pass
+  time.sleep(1)
+  print("Sending you back to main...")
 
 
 
@@ -102,11 +129,13 @@ def ml():
     time.sleep (.5)
     print ("Press '3' if you want a 'baby yoda' madlib.")
     time.sleep (.5)
-    print ("Press '4' to go back to main menu.")
+    print ("Press '4' for a beach madlib!")
+    time.sleep(.5)
+    print ("Press '5' to go back to main menu.")
     time.sleep (.5)
     ml = int(input("->"))
     time.sleep (1)
-    if ml == 4:
+    if ml == 5:
       print("Ok! Sending you back to main . . . ")
       break
       time.sleep (1)
@@ -180,21 +209,21 @@ def ml():
       elif ml == 3:
         mn = input("Made-up Name:")
         time.sleep (1)
-        ad3 = ("Adjective:")
+        ad3 = input("Adjective:")
         time.sleep (1)
-        as1 = ("Wierd Name:")
+        as1 = input("Wierd Name:")
         time.sleep (1)
-        vi3 = ("verb-(ing):")
+        vi3 = input("verb-(ing):")
         time.sleep (1)
-        pn2 = ("Plural Noun:")
+        pn2 = input("Plural Noun:")
         time.sleep (1)
         c2 = input("Color:")
         time.sleep (1)
-        wn = ("2nd Wierd Name:")
+        wn = input("2nd Wierd Name:")
         time.sleep (1)
-        g = ("Gibberish:")
+        g = input("Gibberish:")
         time.sleep (1)
-        nu3 = ("Number:")
+        nu3 = input("Number:")
         time.sleep (1)
         v = input("Verb:")
         time.sleep (1)
@@ -216,7 +245,143 @@ def ml():
         time.sleep (10)
         print ("Sending You back to Madlibs Options ... ")
         time.sleep (2)
+      elif ml == 4:
+        ad4 = input("Adjective:")
+        time.sleep (1)
+        n3 = input("Noun:")
+        time.sleep (1)
+        n4 = input("2nd Noun:")
+        time.sleep (1)
+        n5 = input("3rd Noun:")
+        time.sleep (1)
+        n6 = input("4th Noun:")
+        time.sleep (1)
+        v2 = input("Verb:")
+        time.sleep (1)
+        edn = input("Edible Noun:")
+        time.sleep (1)
+        edn2 = input("2nd Edible Noun:")
+        time.sleep (1)
+        d2 = input("Drink:")
+        time.sleep (1)
+        v3 = input ("2nd Verb:")
+        time.sleep (1)
+        pn3 = input("Plural Noun:")
+        time.sleep (1)
+        print ("Creating Madlib . . . ")
+        time.sleep (2)
+        print ("Initializing Madlib . . .")
+        time.sleep (2)
+        print(" -- A Trip to the Beach! -- ")
+        time.sleep (1.6)
+        print(f"Summer trips to the beach are so {ad4}! Pack your {n3}, a {n4} to dry yourself off, and {n5} to prevent sunburns. Be sure to bring a {n6} to {v2} with in the water. You can bring a beach picnic, with {edn}, {edn2}, and {d2} to drink. It's fun to {v3} for hours in the water, and to see {pn3} sail across in the distance.")
+        time.sleep (9)
+        print ("Sending you back to the Mad-Libs options ... ")
+        time.sleep (2)
+  time.sleep(1)
+  print("Sending you back to main...")
+
+    
 
 
 
 
+
+
+def fight():
+  bh = 100
+  mh = 100
+
+  print("Hello! This is 'Fight'!")
+  time.sleep(2)
+  print("The object of the game is to defeat the Bot!")
+  time.sleep(2)
+  print("You both start with 100 health and whoever reaches 0 health first loses!")
+  time.sleep(2)
+  print("Ready!")
+  time.sleep(1)
+  print("Set!")
+  time.sleep(1)
+  print("Fight!")
+
+  while True:
+
+    h = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40"]))
+
+
+    time.sleep(1)
+    print("Your turn!")
+    while True:
+      time.sleep(1)
+      x = input("Would you like to 'Punch' or 'Heal up'?: ").lower()
+      time.sleep(1)
+      if x[0] == "p":
+        print("You chose to Punch the Bot! The Bot lost",h, "health")
+        bh = bh - h
+        break
+      elif x[0] == "h":
+        print("You chose to Heal up! You healed",h,"health")
+        mh = mh + h
+        break
+      else:
+        print("Sorry, I did not understand. Please try again.")
+
+    time.sleep(2)
+
+    if mh <= 0:
+      print("Sorry, you Lost. The Bot wins!")
+      time.sleep(2)
+      print("Thanks for playing!")
+      break
+    else:
+      pass
+
+    if bh <= 0:
+      print("The Bot Lost! You win!")
+      time.sleep(2)
+      print("Thanks for playing!")
+      break
+    else:
+      pass
+
+    z = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]))
+
+    time.sleep(3)
+    print("Bots turn!")
+    time.sleep(1)
+    choice = random.choice(["p","h"])
+    if choice == "p":
+      print("The Bot chose to Punch You! You lost",z, "health")
+      mh = mh - z
+    elif choice == "h":
+      print("The Bot chose to Heal up! The Bot Healed",z,"health")
+      bh = bh + z
+    else:
+      pass
+
+    time.sleep(3)
+    print("")
+    print ("Stats:")
+    time.sleep(1)
+    print("You:", mh, "health left")
+    print("Bot:", bh, "health left")
+    time.sleep(3)
+    print("")
+
+    if mh <= 0:
+      print("Sorry, you Lost. The Bot wins!")
+      time.sleep(2)
+      print("Thanks for playing!")
+      break
+    else:
+      pass
+
+    if bh <= 0:
+      print("The Bot Lost! You win!")
+      time.sleep(2)
+      print("Thanks for playing!")
+      break
+    else:
+      pass
+  time.sleep(1)
+  print("Sending you back to main...")

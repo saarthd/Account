@@ -5,3 +5,8 @@
 - Make shop
 - Shop items - (have actions)
 
+- Make an option in main called 'actions' where user can return to main menu, change username, log out, and change password in a future update.
+
+- Make Another textbased adventure game
+
+- Add 2player to TicTacToe

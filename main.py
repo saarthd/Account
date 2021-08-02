@@ -4,6 +4,7 @@ import tool
 import games
 import message
 import fun
+import money
 
 print("*Log in Screen*")
 
@@ -18,6 +19,7 @@ while True:
 
     if att == int(passkey):
       print ("ACCESS GRANTED")
+      time.sleep(1)
       wrongcounter = 0
       while True:
 
@@ -384,11 +386,18 @@ while True:
               time.sleep (2)
               break
             elif verdict == 4:
-              print("The program was made by Dhayashree Ravi and Saarth Desai in 2021")
-              time.sleep(3)
-              print("We are both 12 years old and made this program for fun!")
-              time.sleep(3)
-              print ("I am now sending you back to Main Menu ... ")
+              time.sleep (1)
+              print (" -- CREDITS -- ")
+              time.sleep (2)
+              print ("Designers & Software Engineers:")
+              time.sleep (1)
+              print ("Saarth Desai (12)")
+              time.sleep (1)
+              print ("Dhayashree Ravi (12)")
+              time.sleep (1)
+              print ("Message from creators: Thank you for using our software!")
+              time.sleep (2)
+              print ("Sending you back to main ... ")
               time.sleep (2)
               break
             else:
@@ -401,17 +410,21 @@ while True:
           print ("--FUN MENU--")
           time.sleep (.5)
           print ("Type '1' to go back to the Main Menu")
-          time.sleep(0.5)
+          time.sleep(.5)
           print ("Type '2' to use the Magic 8ball!")
-          time.sleep(0.5)
+          time.sleep(.5)
           print("Type '3' to use a Custom Number Changer!")
           time.sleep (.5)
           print ("Press '4' to use a Sentence/Word Reverser!")
           time.sleep(.5)
           print("Type '5' for a Random Story Line Generator!")
           time.sleep(.5)
-          print("Type '6' for Mad Libs!")
-          time.sleep (.6)
+          print("Type '6' to play Mad Libs!")
+          time.sleep (.5)
+          print("Type '7' to Fight Against a Bot")
+          time.sleep(.6)
+
+
           while True:
             fchoice = int(input("-> ")) 
             print("")
@@ -443,7 +456,12 @@ while True:
 
             elif fchoice == 6:
               fun.ml()
-              time.sleep(1.5)
+              time.sleep(.5)
+              break
+
+            elif fchoice == 7:
+              fun.fight()
+              time.sleep(.5)
               break
             
             else:
@@ -471,8 +489,10 @@ while True:
         break
       else:
         print ("CODE INVALID. ACCESS DENIED")
+  else:
+    print ("Internal Error.")
 else: 
-  print ("internal error")
+  print ("internal error.")
 
 
 

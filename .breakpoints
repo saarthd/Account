@@ -3,25 +3,17 @@
     "games.py": [
       {
         "id": "221c86e1-dbac-4b7c-bbc9-4e03e0ca08df",
-        "line": 337,
-        "version": 290,
-        "index": 15456
+        "line": 450,
+        "version": 305,
+        "index": 20907
       }
     ],
     "sussy.txt": [
       {
         "id": "f119a803-deef-4a40-a83c-033a3aea75fe",
         "line": 1,
-        "version": 1,
+        "version": 16,
         "index": 0
-      }
-    ],
-    "tool.py": [
-      {
-        "id": "6d50de91-b697-4405-9ad7-62afbe9c5147",
-        "line": 475,
-        "version": 332,
-        "index": 12727
       }
     ]
   }
