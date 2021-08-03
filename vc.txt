@@ -112,21 +112,47 @@ v1.4 7/27/21 (S)
 
 
 
+
+
+  v2.0 8/03/21 (S/D)
+- Our Program now has color!!!
+- TicTacToe Has an AI bot!
+- A lot of debugging work in some of our older software.
+- Currency Added!!! You now earn money for certian things!
+- There is now a 'bank' option in main 
+- We fixed even more spelling mistakes
+- 'Fight' Renovated with the new action 'kick'
+
+
 #######################################################
 
                  ---ASSIGNMENTS---
 
 ~~~~~~~~~~~~~~~~~~~~~~SAARTHS~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- Adding color to all the menus and adding color to the games/tools/messages/fun functions. ~v2.0~
+- Create 'Actions' menu option in main ~v2.1~
+
+- Add 'Bank' to main menu ~v2.0~
+
+- Add Mini Easter Eggs (S) ~v2.1 - v2.2~
+
+- Add 'Escape the Mansion' (S) ~v2.5~
 
 ~~~~~~~~~~~~~~~~~~~~~~DHAYAS~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-- TextBased Adventure Game (D) ~v2.0~
+- Textbased Adventure Game ~2.3~
 
 - Adding Currency (D) ~v2.0~
+  ~ Messages (Knowlegde)
+  ~ Tools (Random Chance)
+  ~ Fun (Specific Things)
 
-- Add 'Kick' to Fight (D) ~v2.1~
+- Add 'Kick' to 'Fight' ~v2.0~
+
+- Relocate 'Dice Rolling Simulator' from 'Games' to 'Fun' (D) ~v2.1~
+
+- Add multiplier Variable v2.1 
+
 
 ~~~~~~~~~~~~~~~~~~~~~~UNKOWN~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -139,17 +165,13 @@ v1.4 7/27/21 (S)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-                     -- v2.0 -- (Wednesday)
+                     -- v2.0 -- (Today)
 
   - Each one of our menu's will be color coded and each on of our programs will have different corresponding colors
 
   - TicTacToe will have an AI bot!
-  
-  - TextBased Adventure Game will be added to 'Games'
 
   - A new feature 'Currency' is added!
-
-  - Relocate 'Dice Rolling Simulator' from 'Games' to 'Fun'
 
   
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

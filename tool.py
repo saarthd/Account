@@ -12,7 +12,7 @@ def pmcc():
   unit2 = input("what is the unit you want to convert it to?:")
   print()
   if int(unit1) > 4:
-    print ("why must you do this, choose something valid")
+    print ("Please choose something valid")
   else:
     if int(unit2) > 4:
       print ("stop it. not funny. use a valid number")

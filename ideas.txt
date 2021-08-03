@@ -1,12 +1,15 @@
 - Make this into a good enough bot for discord
 
 
-- Add currency
 - Make shop
 - Shop items - (have actions)
 
-- Make an option in main called 'actions' where user can return to main menu, change username, log out, and change password in a future update.
+- Make an option in main called 'actions' where user can return to main menu, change username, log out, create new account, delete account, and change password in a future update.
 
 - Make Another textbased adventure game
 
-- Add 2player to TicTacToe
+- Add 2 player to TicTacToe
+
+- Multiple user's data stored with their username 
+
+- Forgot password or username option

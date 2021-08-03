@@ -5,11 +5,22 @@ import games
 import message
 import fun
 import money
+import random
+class spectrum:
+  red = ("\033[91m")
+  yellow = ("\033[93m")
+  green = ("\033[92m")
+  blue = ("\033[94m")
+  cyan = ("\033[96m")
+  magenta = ("\033[95m")
+  black = ("\033[90m")
+  white = ("\033[97m")
+  
 
-print("*Log in Screen*")
+print(spectrum.white + "*Log in Screen*")
 
 while True:
-  att = int(input("What Is the Passcode? (4 Digit Passcode): "))
+  att = int(input(spectrum.white + "What Is the Passcode? (4 Digit Passcode): "))
   if True:
 
     # Read passkey from the file
@@ -18,7 +29,11 @@ while True:
     passkey = int((file.read()))
 
     if att == int(passkey):
-      print ("ACCESS GRANTED")
+      print (spectrum.green + "ACCESS GRANTED")
+      time.sleep(1)
+      mono = random.choice([5,5,5,5,5,5,5,5,5,5,5,5,5,5,10,10,10,15,15,20])
+      str(money.add_money(mono))
+      print("+",mono,"neows was added to your wallet! (login money)")
       time.sleep(1)
       wrongcounter = 0
       while True:
@@ -26,7 +41,7 @@ while True:
 
 #Main Menu
         print("")
-        print ("--Main Menu--")
+        print (spectrum.cyan + "--Main Menu--")
         time.sleep (0.5)
         print ("Press '1' to Log Out")
         time.sleep (.5)
@@ -51,20 +66,20 @@ while True:
         
         if main == 1:
           while True:
-            z = input("Are you sure?: ").lower()
+            z = input(spectrum.red + "Are you sure?: ").lower()
             if  z[0] == "y":
-              print("Logging off...") 
+              print(spectrum.white + "Logging off...") 
               time.sleep(3)
               print("")
-              print("*Log in Screen*")
+              print(spectrum.white + "*Log in Screen*")
               time.sleep (1)
               break 
             elif z[0] == "n":
-              print ("Ok. Sending you to Main...")
+              print (spectrum.white + "Ok. Sending you to Main...")
               time.sleep(1)
               break
             else:
-              print("Sorry, I do not understand. Please try again.")
+              print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
               time.sleep(1)
 
           if z[0] == "y":
@@ -76,9 +91,9 @@ while True:
 
 
         elif main == 3:
-          x = input("Are you sure you change the passcode?: ").lower()
+          x = input(spectrum.red + "Are you sure you want to change the passcode?: ").lower()
           if  x[0] == "y":
-            passcheck = int(input("Enter Old Passcode: "))
+            passcheck = int(input(spectrum.yellow + "Enter Old Passcode: "))
             time.sleep (1)
             print ("Checking ...")
             time.sleep (2)
@@ -94,17 +109,18 @@ while True:
               print ("Thank You. Password set.")
               time.sleep (1)
             else:
-              print("INVALID PASSCODE. ACCOUNT LOCKED.")
+              print(spectrum.red + "INVALID PASSCODE. ACCOUNT LOCKED.")
               break
           elif x[0] == "n":
-            print ("Ok. Sending you back to Main...")
+            print (spectrum.cyan + "Ok. Sending you back to Main...")
             time.sleep (2)
 
 #games
 
 
         elif main == 2:
-          print ("--GAMES MENU--")
+          print (spectrum.green)
+          print("--GAMES MENU--")
           time.sleep (.5)
           print ("Type '1' if you want to go back to the Main Menu")
           time.sleep(0.5)
@@ -131,7 +147,7 @@ while True:
 
 
             if choice == 1:
-              print("Ok, sending you back to main...")
+              print(spectrum.cyan + "Ok, sending you back to main...")
               time.sleep (1.6)
               break
             
@@ -171,7 +187,7 @@ while True:
               break
 
             else:
-              print("Sorry, I do not understand. Please try again.")
+              print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
               time.sleep(1)
 
 
@@ -182,7 +198,7 @@ while True:
 
         elif main == 5:
           time.sleep (1)
-          print ("--TOOLS MENU--")
+          print (spectrum.blue + "--TOOLS MENU--")
           time.sleep (.5)
           print ("Press '1' to go back to Main Menu.")
           time.sleep (0.5)
@@ -213,12 +229,21 @@ while True:
   #tools function code
 
             if gangsta == 1:
-              print ("Ok. Sending you back to main...")
+              print (spectrum.cyan + "Ok. Sending you back to main...")
               time.sleep (1.6)
               break
             elif gangsta == 2:
               tool.calc()
               time.sleep(2)
+              life = random.choice(0,0,0,1,1,2)
+              if life == 0:
+                pass
+              elif life == 1:
+                time.sleep(1)
+                str(money.add_money(random.choice(40,40,40,50,)))
+                print("+15 neows was added to your wallet!  (Participation Money)")
+                time.sleep(1)
+
               break
             elif gangsta == 3:
               tool.pmcc()
@@ -253,7 +278,7 @@ while True:
               time.sleep(2)
               break
             else:
-              print("Sorry, I do not understand. Please try again.")
+              print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
               time.sleep(1)
           
 
@@ -264,7 +289,7 @@ while True:
 
         elif main == 6:
           time.sleep(1)
-          print("--MESSAGES--")
+          print(spectrum.magenta + " --MESSAGES-- ")
           time.sleep(1)
           print ("Type '1' to return back to main menu.")
           time.sleep(0.5)
@@ -290,46 +315,46 @@ while True:
 
             if bruh == 1:
               time.sleep (1)
-              print ("Ok. Sending You back to main ... ")
+              print (spectrum.cyan + "Ok. Sending You back to main ... ")
               break
 
             elif bruh == 2:
               message.insult()
               time.sleep(1)
-              print("Sending you back to main...")
+              print(spectrum.cyan + "Sending you back to main...")
               time.sleep(1.5)
               break
 
             elif bruh == 3:
               message.inspo()
               time.sleep(1)
-              print("Sending you back to main...")
+              print(spectrum.cyan + "Sending you back to main...")
               time.sleep(1.5)
               break
 
             elif bruh == 4:
               message.advice()
               time.sleep(1)
-              print("Sending you back to main...")
+              print(spectrum.cyan + "Sending you back to main...")
               time.sleep(1.5)
               break
 
             elif bruh == 5:
               message.feelbetter()
               time.sleep(1)
-              print("Sending you back to main...")
+              print(spectrum.cyan + "Sending you back to main...")
               time.sleep(1.5)
               break
 
             elif bruh == 6:
               message.fact()
               time.sleep(1)
-              print("Sending you back to main...")
+              print(spectrum.cyan + "Sending you back to main...")
               time.sleep(1.5)
               break
 
             else:
-              print("Sorry, I do not understand. Please try again.")
+              print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
               time.sleep(1)
   
 
@@ -338,7 +363,7 @@ while True:
 
         elif main == 7:
           time.sleep (1)
-          print ("-- HELP MENU --")
+          print (spectrum.red + "-- HELP MENU --")
           time.sleep (.6)
           print ("Press '1' to Return to main menu.")
           time.sleep (.6)
@@ -349,7 +374,7 @@ while True:
           print ("Press '4' for Credits")
           time.sleep (.6)
           while True:
-            verdict = int(input("->"))
+            verdict = int(input("-> "))
             print("")
 
 #Help menu conditions(:)
@@ -357,7 +382,7 @@ while True:
 
             if verdict == 1:
               time.sleep (1)
-              print ("Ok. Sending you back to main ... ")
+              print (spectrum.yellow + "Ok. Sending you back to main ... ")
               time.sleep (2)
               break
 
@@ -365,7 +390,7 @@ while True:
               time.sleep (1)
               print ("To Navigate this program, you have to type the number corresponding to the place you want to go to when the prompt '->' appears. Then press enter, and you will arrive at your destination, and so on. ")
               time.sleep(8)
-              print ("Returning to Main Menu ...")
+              print (spectrum.cyan + "Returning to Main Menu ...")
               time.sleep (1.6)
               break
             elif verdict == 3:
@@ -382,12 +407,12 @@ while True:
               time.sleep (4)
               print ("To log out, go back to the main menu and use the log-out option. It will send you back to the login screen.")
               time.sleep (3)
-              print ("I am now sending you back to main menu ... ")
+              print (spectrum.cyan + "I am now sending you back to main menu ... ")
               time.sleep (2)
               break
             elif verdict == 4:
               time.sleep (1)
-              print (" -- CREDITS -- ")
+              print (spectrum.magenta + " -- CREDITS -- ")
               time.sleep (2)
               print ("Designers & Software Engineers:")
               time.sleep (1)
@@ -397,17 +422,21 @@ while True:
               time.sleep (1)
               print ("Message from creators: Thank you for using our software!")
               time.sleep (2)
-              print ("Sending you back to main ... ")
+              cred_mon = random.choice([5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,100,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5])
+              str(money.add_money(cred_mon))
+              print(spectrum.green + "+",cred_mon,"neows was added to your wallet! (Little Easter Egg)")
+              time.sleep(1)
+              print (spectrum.cyan + "Sending you back to main ... ")
               time.sleep (2)
               break
             else:
-              print("Sorry, I do not understand. Please try again.")
+              print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
               time.sleep(1)
 
 
         
         elif main == 4:
-          print ("--FUN MENU--")
+          print (spectrum.yellow + "--FUN MENU--")
           time.sleep (.5)
           print ("Type '1' to go back to the Main Menu")
           time.sleep(.5)
@@ -430,7 +459,7 @@ while True:
             print("")
 
             if fchoice == 1:
-              print("Ok, sending you back to main...")
+              print(spectrum.cyan + "Ok, sending you back to main...")
               time.sleep (1.6)
               break
 
@@ -475,45 +504,21 @@ while True:
 
 
 
-        
 #access  denied code
 
+
         else:
-          print("Sorry, I do not understand. Please try again.")
+          print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
           time.sleep(1)
 
     else: 
       wrongcounter = wrongcounter + 1
       if wrongcounter == 3:
-        print ("CODE INVALID. ACCESS DENIED, ACCOUNT LOCKED.")
+        print (spectrum.red + "CODE INVALID. ACCESS DENIED, ACCOUNT LOCKED.")
         break
       else:
-        print ("CODE INVALID. ACCESS DENIED")
+        print (spectrum.red + "CODE INVALID. ACCESS DENIED")
   else:
-    print ("Internal Error.")
+    print (spectrum.red + "Internal Error.")
 else: 
-  print ("internal error.")
-
-
-
-#The end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5
-
-
+  print (spectrum.red + "internal error.")

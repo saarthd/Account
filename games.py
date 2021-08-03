@@ -1,5 +1,6 @@
 import time
 import random
+import money
 
 def rpsdhaya():
   time.sleep(1)
@@ -22,24 +23,58 @@ def rpsdhaya():
 
     if r == f:
       print("Its a tie!")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet! (Participation Money)")
+      time.sleep(1)
       break
+
     elif r == "p" and f == "r":
       print("Paper covers rock! You win!")
+      time.sleep(1)
+      str(money.add_money(100))
+      print("+100 neows was added to your wallet! (Money for Winning)")
+      time.sleep(1)
       break
+
     elif r == "p" and f == "s":
       print("Scissors cuts paper! You lose!")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet! (Participation Money)")
+      time.sleep(1)
       break
+
     elif r == "s" and f == "p":
       print("Scissors cuts paper! You win!")
+      time.sleep(1)
+      str(money.add_money(100))
+      print("+100 neows was added to your wallet! (Money for Winning)")
+      time.sleep(1)
       break
+
     elif r == "s" and f == "r":
       print("Rock smashes scissors! You lose!")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet! (Participation Money)")
+      time.sleep(1)
       break
+
     elif r == "r" and f == "p":
       print("Paper covers rock! You lose!")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet! (Participation Money)")
+      time.sleep(1)
       break
+
     elif r == "r" and f == "s":
       print("Rock smashes scissors! You win!")
+      time.sleep(1)
+      str(money.add_money(100))
+      print("+100 neows was added to your wallet! (Money for Winning)")
+      time.sleep(1)
       break
 
     else:
@@ -72,6 +107,9 @@ def g():
     else:
       print ("You guessed it! Good Job!")
       time.sleep(1)
+      str(money.add_money(100))
+      print("+100 neows was added to your wallet! (Money for Winning)")
+      time.sleep(1)
       return 1
   guessed = False
   for i in range(0,10):
@@ -80,6 +118,10 @@ def g():
       break
   if guessed == False: 
     print("Sorry, you lost!")
+    time.sleep(1)
+    str(money.add_money(10))
+    print("+15 neows was added to your wallet! (Participation Money)")
+    time.sleep(1)
   else:
     print ("Ok. Sending you back to main...")
     time.sleep (1)
@@ -117,8 +159,12 @@ def hm():
               failed += 1  
   
       if failed == 0:
-          print("You Won! Good job!")
-          break
+        print("You Won! Good job!")
+        time.sleep(1)
+        str(money.add_money(150))
+        print("+300 neows was added to your wallet! (Money for Winning)")
+        time.sleep(1)
+        break
       
       guess = input("What is your guess?: ")
       
@@ -136,6 +182,10 @@ def hm():
           if turns == 0:
             time.sleep(0.5)
             print("Sorry you lost")
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
   print("The word was: ",word)
 
 def dice():
@@ -152,6 +202,10 @@ def dice():
       time.sleep(0.5)
     else:
       print("Ok! Thanks for playing!")
+      time.sleep(1)
+      str(money.add_money(5))
+      print("+5 neows was added to your wallet! (Participation Money)")
+      time.sleep(1)
       break
 
 
@@ -184,12 +238,24 @@ def ttt():
   while True:
     if gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == t or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == t or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == t or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == t or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == t :
       print ("You win!. Press 'Run' to play again!")
+      time.sleep(1)
+      str(money.add_money(250))
+      print("+250 neows was added to your wallet! (Money for Winning)")
+      time.sleep(1)
       break
     elif gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [0][1] == gameboard [0][2] == ot or gameboard [1][0] == gameboard [1][1] == gameboard [1][2] == ot or gameboard [2][0] == gameboard [2][1] == gameboard [2][2] == ot or gameboard [0][0] == gameboard [1][1] == gameboard [2][2] == ot or gameboard [0][2] == gameboard [1][1] == gameboard [2][0] == ot :
       print ("I Win! Press run to play again!")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet!  (Participation Money)")
+      time.sleep(1)
       break
     elif gameboard [0][0] != blank and gameboard [0][1] != blank and gameboard [0][2] != blank and  gameboard [1][0] != blank and gameboard [1][1] != blank and gameboard [1][2] != blank and gameboard [2][0] != blank and gameboard [2][1] != blank and gameboard [2][2] != blank:
       print ("Draw! Press 'run' to play again.")
+      time.sleep(1)
+      str(money.add_money(15))
+      print("+15 neows was added to your wallet!  (Participation Money)")
+      time.sleep(1)
       break
     else:
       print (f"Choose the Row and Column of where you want to put your {t}.(Row - 0,1,2) (Column - 0,1,2)")
@@ -386,12 +452,12 @@ def rpssaarth():
     print ("I have chosen my sign.")
     our = random.choice([1,2,3])
     time.sleep (0.8)
-    print ("choose Your Sign:")
+    print ("Choose Your Sign: ")
 
     time.sleep (0.5)
     print ("Rock = 1, Paper = 2, Scissors = 3")
     while True:
-      their = input("What did you choose?:")
+      their = input("What did you choose?: ")
       if int(their) > 3 or int(their) < 0:
         print ("Give me a valid number.")
         print ("Rock = 1, Paper = 2, Scissors = 3")
@@ -407,37 +473,51 @@ def rpssaarth():
       elif int(their) == 2:
         print ("Paper Covers Rock! You win.")
         time.sleep (1)
-        print ("Press Run to Play Again!")
+        str(money.add_money(50))
+        print("+50 neows was added to your wallet! (Money for Winning)")
+        time.sleep(1)
         break
       elif their == 3:
         print ("Rock Smashes Scissors! You lose!!!")  
-        time.sleep (1)
-        print ("Press Run to play again!")
+        time.sleep(1)
+        str(money.add_money(15))
+        print("+15 neows was added to your wallet!  (Participation Money)")
+        time.sleep(1)
         break
     elif our == 2:
       print ("I chose Paper!")
       if their == 1:
         print ("Paper Covers Rock! You lose!!!!!!")
-        time.sleep (1)
+        time.sleep(1)
+        str(money.add_money(15))
+        print("+15 neows was added to your wallet!  (Participation Money)")
+        time.sleep(1)
         break
       elif their == 2:
         print ("Tie! We have to redo it! ")
         time.sleep (1)
       elif their == 3:
         print ("Scissor cuts Paper. You win.")
-        time.sleep (1)
-        print ("Press run to play again!")
+        time.sleep(1)
+        str(money.add_money(50))
+        print("+50 neows was added to your wallet! (Money for Winning)")
+        time.sleep(1)
         break
     elif our == 3:
       print ("I chose Scissors!")
       if their == 1:
         print ("Rock Demolishes Scissor. You Win.")
-        time.sleep (1)
-        print ("Press run to play again !")
+        time.sleep(1)
+        str(money.add_money(50))
+        print("+50 neows was added to your wallet! (Money for Winning)")
+        time.sleep(1)
         break
       elif their == 2:
         print ("Scissor cuts Paper! You lose!!!")
-        time.sleep (1)
+        time.sleep(1)
+        str(money.add_money(15))
+        print("+15 neows was added to your wallet!  (Participation Money)")
+        time.sleep(1)
         break
       elif their == 3:
         print ("Tie! We have to redo it! ")
@@ -500,8 +580,10 @@ def bj():
           print ("You Busted!")
           time.sleep(.5)
           print (f"Here were your cards: {usercards}")
-          time.sleep (1)
-          print ("Press 'run' to play again!")
+          time.sleep(1)
+          str(money.add_money(15))
+          print("+15 neows was added to your wallet!  (Participation Money)")
+          time.sleep(1)
           break
         else:
           time.sleep (1)
@@ -519,8 +601,10 @@ def bj():
             botcards.append(botcard)
             if sum(botcards) > 21:
               print ("The Bot Busted! You win!")
-              time.sleep (1)
-              print ("Press 'run' to play again!")
+              time.sleep(1)
+              str(money.add_money(250))
+              print("+250 neows was added to your wallet! (Money for Winning)")
+              time.sleep(1)
               break
             else:
               time.sleep (1)
@@ -539,13 +623,25 @@ def bj():
           if sum(botcards) > sum(usercards):
             double = 1
             print("Bot Wins! You Lose!")
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
           elif sum(botcards) < sum(usercards):
             double = 1
-            print ("You win! Bot loses! Press 'Run' to play again!")
+            print ("You win! Bot loses!")
+            time.sleep(1)
+            str(money.add_money(250))
+            print("+250 neows was added to your wallet! (Money for Winning)")
+            time.sleep(1)
             break
           else:
-            print ("Tie! Press 'Run' to play again!")
+            print ("Tie!")
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
         else:
           print ("The bot has decided to hit!")
@@ -567,13 +663,24 @@ def bj():
                   if sum(botcards) > sum(usercards):
                     double = 1
                     print("Bot Wins! You Lose! Press 'Run' to play again!")
+                    time.sleep(1)
+                    str(money.add_money(15))
+                    print("+15 neows was added to your wallet!  (Participation Money)")
+                    time.sleep(1)
                     break
                   elif sum(botcards) < sum(usercards):
                     double = 1
-                    print ("You win! Bot loses! Press 'Run' to play again!")
-                    break
+                    print ("You win! Bot loses!")
+                    time.sleep(1)
+                    str(money.add_money(250))
+                    print("+250 neows was added to your wallet! (Money for Winning)")
+                    time.sleep(1)
                   else:
-                    print("Tie! Press 'Run' To play again!")
+                    print("Tie!")
+                    time.sleep(1)
+                    str(money.add_money(15))
+                    print("+15 neows was added to your wallet!  (Participation Money)")
+                    time.sleep(1)
                     break
               else:
                 print ("The bot decided to hit!")
@@ -582,8 +689,10 @@ def bj():
           else:    
             if sum(botcards) > 21:
               print ("The Bot Busted! You win!")
-              time.sleep (1)
-              print ("Press 'run' to play again!")
+              time.sleep(1)
+              str(money.add_money(250))
+              print("+250 neows was added to your wallet! (Money for Winning)")
+              time.sleep(1)
               break
             else:
               time.sleep (1)
@@ -635,7 +744,10 @@ def bj():
           time.sleep (1)
           if sum(cards1) > 21:
             print (f"{player1} busts! {player2} Wins!!! ")
-            time.sleep (2)
+            time.sleep(1)
+            str(money.add_money(50))
+            print("+50 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
           else:
             if stand2 == 0:
@@ -656,7 +768,10 @@ def bj():
                 time.sleep (2)
                 if sum(cards2) > 21:
                   print (f"{player2} busts! {player1} Wins!!!")
-                  time.sleep (2)
+                  time.sleep(1)
+                  str(money.add_money(15))
+                  print("+15 neows was added to your wallet!  (Participation Money)")
+                  time.sleep(1)
                   break
                 else:
                   rod = rod + 1
@@ -695,8 +810,11 @@ def bj():
               cards2.append(card2)
               time.sleep (2)
               if sum(cards2) > 21:
-                print (f"{player1} busts! {player2} Wins!!!")
-                time.sleep (2)
+                print (f"{player2} busts! {player1} Wins!!!")
+                time.sleep(1)
+                str(money.add_money(15))
+                print("+15 neows was added to your wallet!  (Participation Money)")
+                time.sleep(1)
                 break
               else:
                 rod = rod + 1
@@ -709,15 +827,24 @@ def bj():
               time.sleep (2)
               if sum(cards2) < sum(cards1):
                 print (f"{player1}!!! Congratulations!!!")
-                time.sleep (3)
+                time.sleep(1)
+                str(money.add_money(15))
+                print("+15 neows was added to your wallet!  (Participation Money)")
+                time.sleep(1)
                 break
               elif sum(cards1) < sum(cards2):
                 print (f"{player2}!!! Congratulations!!!")
-                time.sleep (3)
+                time.sleep(1)
+                str(money.add_money(15))
+                print("+15 neows was added to your wallet!  (Participation Money)")
+                time.sleep(1)
                 break
               else:
                 print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
-                time.sleep (3)
+                time.sleep(1)
+                str(money.add_money(15))
+                print("+15 neows was added to your wallet!  (Participation Money)")
+                time.sleep(1)
                 break
           else:
             time.sleep (1)
@@ -725,15 +852,24 @@ def bj():
             time.sleep (2)
             if sum(cards2) < sum(cards1):
               print (f"{player1}!!! Congratulations!!!")
-              time.sleep (3)
+              time.sleep(1)
+              str(money.add_money(15))
+              print("+15 neows was added to your wallet! (Participation Money)")
+              time.sleep(1)
               break
             elif sum(cards1) < sum(cards2):
               print (f"{player2}!!! Congratulations!!!")
-              time.sleep (3)
+              time.sleep(1)
+              str(money.add_money(15))
+              print("+15 neows was added to your wallet!  (Participation Money)")
+              time.sleep(1)
               break
             else:
               print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
-              time.sleep (3)
+              time.sleep(1)
+              str(money.add_money(15))
+              print("+15 neows was added to your wallet!  (Participation Money)")
+              time.sleep(1)
               break
       else:
         print (f"{player2}: Would You like to Hit or Stand? (h/s)")
@@ -751,7 +887,10 @@ def bj():
           time.sleep (2)
           if sum(cards2) > 21:
             print (f"{player1} busts! {player2} Wins!!!")
-            time.sleep (2)
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
           else:
             rod = rod + 1
@@ -765,13 +904,22 @@ def bj():
           time.sleep (2)
           if sum(cards2) < sum(cards1):
             print (f"{player1}!!! Congratulations!!!")
-            time.sleep (3)
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
           elif sum(cards1) < sum(cards2):
             print (f"{player2}!!! Congratulations!!!")
-            time.sleep (3)
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
           else:
             print (f"Tie!!! Congratulations to {player1} and {player2}!!!")
-            time.sleep (3)
+            time.sleep(1)
+            str(money.add_money(15))
+            print("+15 neows was added to your wallet!  (Participation Money)")
+            time.sleep(1)
             break
