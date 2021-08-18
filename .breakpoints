@@ -3,31 +3,39 @@
     "games.py": [
       {
         "id": "221c86e1-dbac-4b7c-bbc9-4e03e0ca08df",
-        "line": 450,
-        "version": 309,
-        "index": 20907
+        "line": 530,
+        "version": 1,
+        "index": 23688
       },
       {
         "id": "7f58e9a4-b95c-4023-be92-f50a4e7f10c4",
-        "line": 777,
-        "version": 309,
-        "index": 31448
+        "line": 925,
+        "version": 1,
+        "index": 37413
+      }
+    ],
+    "main.py": [
+      {
+        "id": "5d850155-4c15-4668-a822-3921e5c7f044",
+        "line": 22,
+        "version": 1,
+        "index": 353
       }
     ],
     "sussy.txt": [
       {
         "id": "f119a803-deef-4a40-a83c-033a3aea75fe",
         "line": 1,
-        "version": 17,
+        "version": 1,
         "index": 0
       }
     ],
     "vc.txt": [
       {
         "id": "6d0fb10f-4815-4fe9-8d12-610d78db829b",
-        "line": 144,
-        "version": 1704,
-        "index": 4174
+        "line": 155,
+        "version": 8,
+        "index": 4536
       }
     ]
   }

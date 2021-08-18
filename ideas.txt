@@ -13,3 +13,5 @@
 - Multiple user's data stored with their username 
 
 - Forgot password or username option
+
+- Add sound files to some areas in the code?

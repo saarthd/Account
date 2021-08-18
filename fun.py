@@ -307,22 +307,29 @@ def fight():
 
   while True:
 
-    h = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40"]))
+    punch_m = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40"]))
 
+    heal_m = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]))
+
+    kick_m = int(random.choice(["10","11","12","13","14","15","16","17","18","19","20","50","51","52","53","54","55","56"]))
 
     time.sleep(1)
     print("Your turn!")
     while True:
       time.sleep(1)
-      x = input("Would you like to 'Punch' or 'Heal up'?: ").lower()
+      x = input("Would you like to 'Punch', 'Kick' or 'Heal up'?: ").lower()
       time.sleep(1)
       if x[0] == "p":
-        print("You chose to Punch the Bot! The Bot lost",h, "health")
-        bh = bh - h
+        print("You chose to Punch the Bot! The Bot lost",punch_m, "health")
+        bh = bh - punch_m
         break
       elif x[0] == "h":
-        print("You chose to Heal up! You healed",h,"health")
-        mh = mh + h
+        print("You chose to Heal up! You healed",heal_m,"health")
+        mh = mh + heal_m
+        break
+      elif x[0] == "k":
+        print("You chose to Kick! The Bot lost",kick_m,"health")     
+        bh = bh - kick_m
         break
       else:
         print("Sorry, I did not understand. Please try again.")
@@ -333,6 +340,10 @@ def fight():
       print("Sorry, you Lost. The Bot wins!")
       time.sleep(2)
       print("Thanks for playing!")
+      time.sleep(1)
+      str(money.add_money(50))
+      print("+50 neows was added to your wallet! (Money for winning)")
+      time.sleep(1)
       break
     else:
       pass
@@ -341,22 +352,34 @@ def fight():
       print("The Bot Lost! You win!")
       time.sleep(2)
       print("Thanks for playing!")
+      time.sleep(1)
+      str(money.add_money(250))
+      print("+250 neows was added to your wallet! (Money for winning)")
+      time.sleep(1)
       break
     else:
       pass
 
-    z = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]))
+    punch_b = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30"]))
+
+    heal_b = int(random.choice(["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15"]))
+
+    kick_b = int(random.choice(["10","11","12","13","14","15","16","17","18","19","20","50","51","52","53","54","55","56"]))
 
     time.sleep(3)
     print("Bots turn!")
     time.sleep(1)
-    choice = random.choice(["p","h"])
+    choice = random.choice(["p","h","k"])
     if choice == "p":
-      print("The Bot chose to Punch You! You lost",z, "health")
-      mh = mh - z
+      print("The Bot chose to Punch You! You lost",punch_b, "health")
+      mh = mh - punch_b
     elif choice == "h":
-      print("The Bot chose to Heal up! The Bot Healed",z,"health")
-      bh = bh + z
+      print("The Bot chose to Heal up! The Bot Healed",heal_b,"health")
+      bh = bh + heal_b
+    elif choice == "k":
+      print("The Bot chose to Kick! You lost",kick_b,"health")     
+      mh = mh - kick_b
+      break
     else:
       pass
 
@@ -373,6 +396,10 @@ def fight():
       print("Sorry, you Lost. The Bot wins!")
       time.sleep(2)
       print("Thanks for playing!")
+      time.sleep(1)
+      str(money.add_money(50))
+      print("+50 neows was added to your wallet! (Money for winning)")
+      time.sleep(1)
       break
     else:
       pass
@@ -381,6 +408,10 @@ def fight():
       print("The Bot Lost! You win!")
       time.sleep(2)
       print("Thanks for playing!")
+      time.sleep(1)
+      str(money.add_money(250))
+      print("+250 neows was added to your wallet! (Money for winning)")
+      time.sleep(1)
       break
     else:
       pass

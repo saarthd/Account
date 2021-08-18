@@ -6,6 +6,7 @@ import message
 import fun
 import money
 import random
+
 class spectrum:
   red = ("\033[91m")
   yellow = ("\033[93m")
@@ -20,15 +21,15 @@ class spectrum:
 print(spectrum.white + "*Log in Screen*")
 
 while True:
-  att = int(input(spectrum.white + "What Is the Passcode? (4 Digit Passcode): "))
+  att = str(input(spectrum.white + "What Is the Password?: "))
   if True:
 
     # Read passkey from the file
 
     file = open("sussy.txt", "r+")
-    passkey = int((file.read()))
+    passkey = str((file.read()))
 
-    if att == int(passkey):
+    if att == passkey:
       print (spectrum.green + "ACCESS GRANTED")
       time.sleep(1)
       mono = random.choice([5,5,5,5,5,5,5,5,5,5,5,5,5,5,10,10,10,15,15,20])
@@ -47,7 +48,7 @@ while True:
         time.sleep (.5)
         print ("Press '2' to Play Games")
         time.sleep (.5)
-        print ("Press '3' to Change Passcode")
+        print ("Press '3' to Change Password")
         time.sleep (.5)
         print ("Press '4' to the 'Fun' Menu ")
         time.sleep (.5)
@@ -57,7 +58,7 @@ while True:
         time.sleep(.5)
         print("Press '7' for Help")
         time.sleep (.5)
-        main = int(input("-> "))
+        main = str(input("-> "))
         print("")
 
 
@@ -91,25 +92,27 @@ while True:
 
 
         elif main == 3:
-          x = input(spectrum.red + "Are you sure you want to change the passcode?: ").lower()
+          x = input(spectrum.red + "Are you sure you want to change the Password?: ").lower()
           if  x[0] == "y":
-            passcheck = int(input(spectrum.yellow + "Enter Old Passcode: "))
+            passcheck = str(input(spectrum.yellow + "Enter Old Password: "))
             time.sleep (1)
             print ("Checking ...")
             time.sleep (2)
             if passcheck == passkey:
-              print ("Passcode Validated.")
+              print ("Password Validated.")
               time.sleep (1.2)
-              newpass = input("Enter New Passcode (Has to be 4 Digits): ")
+              newpass = input("Enter New Password (Has to be 4 Digits): ")
               time.sleep (0.8)
-              print ("Running New Passcode ...")
+              print ("Running New Password ...")
               file.seek(0)
+              file.truncate()
               file.write(newpass)
+              file.close()
               time.sleep (2.5)
               print ("Thank You. Password set.")
               time.sleep (1)
             else:
-              print(spectrum.red + "INVALID PASSCODE. ACCOUNT LOCKED.")
+              print(spectrum.red + "INVALID PASSWORD. ACCOUNT LOCKED.")
               break
           elif x[0] == "n":
             print (spectrum.cyan + "Ok. Sending you back to Main...")
@@ -235,47 +238,172 @@ while True:
             elif gangsta == 2:
               tool.calc()
               time.sleep(2)
-              life = random.choice(0,0,0,1,1,2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
               if life == 0:
                 pass
               elif life == 1:
                 time.sleep(1)
-                str(money.add_money(random.choice(40,40,40,50,)))
-                print("+15 neows was added to your wallet!  (Participation Money)")
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet!")
+                time.sleep(2)
+              elif life == 2:
                 time.sleep(1)
-
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 3:
               tool.pmcc()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet!  ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 4:
               tool.pal()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 5:
               tool.strrev()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 6:
               tool.mimc()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 7:
               tool.tc()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 8:
               tool.slc()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 9:
               tool.ods()
               time.sleep (2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             elif gangsta == 10:
               tool.ranpass()
               time.sleep(2)
+              life = random.choice([0,0,0,0,0,0,1,1,1,1,1,2])
+              if life == 0:
+                time.sleep (1)
+                pass
+              elif life == 1:
+                time.sleep(1)
+                tool_mon = random.choice([40,40,40,50,50,50,50,75,75,75,100,100,100,100,100,125,125,125,150,150,150,150,200,200])
+                str(money.add_money(tool_mon))
+                print(f"+{tool_mon} neows was added to your wallet! ")
+                time.sleep(2)
+              elif life == 2:
+                time.sleep(1)
+                str(money.add_money(800))
+                print ("You won the Jackpot for using a tool! +800 neows!")
+                time.sleep (2)
               break
             else:
               print(spectrum.yellow + "Sorry, I do not understand. Please try again.")
